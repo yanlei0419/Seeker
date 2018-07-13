@@ -1,0 +1,24 @@
+package org.vegetto.common.base.db.result;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import org.vegetto.common.base.db.interfaces.IResultSetHandler;
+import org.vegetto.common.base.db.interfaces.IRowProcessor;
+@Deprecated
+public class ArrayHandler implements IResultSetHandler<Object[]> {
+	static final IRowProcessor ROW_PROCESSOR = new RowProcessor();
+	private final IRowProcessor convert;
+
+	public ArrayHandler() {
+		this(ROW_PROCESSOR);
+	}
+
+	public ArrayHandler(IRowProcessor convert) {
+		this.convert = convert;
+	}
+
+	public Object[] handle(ResultSet rs) throws SQLException {
+		return rs.next() ? this.convert.toArray(rs) : null;
+	}
+}

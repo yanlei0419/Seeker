@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	<!-- ========================== 自定义输出格式说明================================ -->
+	<!-- %p 输出优先级，即DEBUG，INFO，WARN，ERROR，FATAL（从低到高） -->
+	<!-- #%r 输出自应用启动到输出该log信息耗费的毫秒数 -->
+	<!-- #%c 输出所属的类目，通常就是所在类的全名 -->
+	<!-- #%t 输出产生该日志事件的线程名 -->
+	<!-- #%n 输出一个回车换行符，Windows平台为“\r\n”，Unix平台为“\n” -->
+	<!-- #%m     输出代码指定信息，如info(“message”),输出message-->
+	<!-- #%d 输出日志时间点的日期或时间，默认格式为ISO8601，也可以在其后指定格式，比如：%d{yyy MMM dd HH:mm:ss,SSS}，输出类似：2002年10月18日 22：10：28，921 -->
+	<!-- #%l 输出日志事件的发生位置，包括类目名、发生的线程，以及在代码中的行数。举例：Testlog4.main(TestLog4.java:10) -->
+	<!-- ========================================================================== -->
+
+	<!-- ========================== 输出方式说明================================ -->
+	<!-- Log4j提供的appender有以下几种: -->
+	<!-- org.apache.log4j.ConsoleAppender(控制台), -->
+	<!-- org.apache.log4j.FileAppender(文件), -->
+	<!-- org.apache.log4j.DailyRollingFileAppender(每天产生一个日志文件), -->
+	<!-- org.apache.log4j.RollingFileAppender(文件大小到达指定尺寸的时候产生一个新的文件), -->
+	<!-- org.apache.log4j.WriterAppender(将日志信息以流格式发送到任意指定的地方) -->
+	<!--	f:：org.apache.log4j.jdbc.JDBCAppender：通过JDBC把日志信息输出到数据库中。 -->
+	<!-- ========================================================================== -->
+
+	<!-- ========================== 日志输出级别说明 ================================ -->
+	<!--	B)日志级别 -->
+	<!--每个Logger都被了一个日志级别（log level），用来控制日志信息的输出。日志级别从高到低分为： -->
+	<!--A：off         最高等级，用于关闭所有日志记录。 -->
+	<!--B：fatal       指出每个严重的错误事件将会导致应用程序的退出。 -->
+	<!--C：error      指出虽然发生错误事件，但仍然不影响系统的继续运行。 -->
+	<!--D：warm     表明会出现潜在的错误情形。 -->
+	<!--E：info         一般和在粗粒度级别上，强调应用程序的运行全程。 -->
+	<!--F：debug     一般用于细粒度级别上，对调试应用程序非常有帮助。 -->
+	<!--G：all           最低等级，用于打开所有日志记录-->
+	<!-- ========================================================================== -->
+	<!-- 输出到控制台中 -->
+	<appender name="Console" class="org.apache.log4j.ConsoleAppender">
+		<!--日志输出级别DEBUG，INFO，WARN，ERROR，FATAL	-->
+<!--		<param name="Threshold" value="ERROR" />-->
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[Console] Operate[%30X{userName}] %-d{yyyy-MM-dd HH:mm:ss} [%p] [%t] %c{1}.%M(%L) | %m%n" />
+		</layout>
+	</appender>
+
+
+	<!-- 输出到日志文件- -->
+	<appender name="ConsoleFile" class="org.apache.log4j.RollingFileAppender">
+		<param name="encoding" value="UTF-8" />
+		<!-- 设置File参数：日志输出文件名 -->
+		<param name="File" value="c:/logs/ConsoleFile.log" />
+		<!-- 设置是否在重新启动服务时，在原有日志的基础添加新日志 -->
+		<param name="Append" value="true" />
+		<!-- 设置文件大小 -->
+		<param name="MaxFileSize" value="3000KB" />
+		<!-- 设置文件备份 -->
+		<param name="MaxBackupIndex" value="10000" />
+		
+		<!-- 设置输出文件项目和格式 -->
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[Console] Operate[ %-20X{userName} ]  %-d{yyyy-MM-dd HH:mm:ss} %-5p %-15c{1}: %m%n" />
+		</layout>
+	</appender>
+	<!-- 数据库操作输出到日志文件- -->
+	<appender name="Db" class="org.apache.log4j.RollingFileAppender">
+		<param name="encoding" value="UTF-8" />
+		<!-- 设置File参数：日志输出文件名 -->
+		<param name="File" value="c:/logs/db.log" />
+		<!-- 设置是否在重新启动服务时，在原有日志的基础添加新日志 -->
+		<param name="Append" value="true" />
+		<!-- 设置文件大小 -->
+		<param name="MaxFileSize" value="3000KB" />
+		<!-- 设置文件备份 -->
+		<param name="MaxBackupIndex" value="10000" />
+		
+		<!-- 设置输出文件项目和格式 -->
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[DataSource] Operate[ %-20X{userName} ]  %-d{yyyy-MM-dd HH:mm:ss} %-5p %-15c{1}: %m%n" />
+		</layout>
+	</appender>
+	<!-- 输出到日志文件- -->
+	<appender name="Vegetto" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="encoding" value="UTF-8" />
+		<!-- 设置File参数：日志输出文件名 -->
+		<param name="File" value="c:/logs/Vegetto.log" />
+		<!-- 设置是否在重新启动服务时，在原有日志的基础添加新日志 -->
+		<param name="Append" value="true" />
+		<!--#昨天的日志文件名Sendmsg+“昨天日期”.log -->
+		<!-- Rollover at midnight each day -->
+		<param name="DatePattern" value="'.'yyyy-MM-dd" />
+		
+		<!-- 设置输出文件项目和格式 -->
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[Vegetto] Operate[ %-20X{userName} ]  %-d{yyyy-MM-dd HH:mm:ss} %-5p %-15c{1}: %m%n" />
+		</layout>
+	</appender>
+	<!-- 输出到日志文件- -->
+<!--	<appender name="SpringConsole" class="org.apache.log4j.DailyRollingFileAppender">-->
+<!--		<param name="encoding" value="UTF-8" />-->
+<!--		<param name="File" value="c:/logs/SpringConsole.log" />-->
+<!--		<param name="Append" value="true" />-->
+<!--		<param name="DatePattern" value="'.'yyyy-MM-dd" />-->
+<!--		<layout class="org.apache.log4j.PatternLayout">-->
+<!--			<param name="ConversionPattern" value="[SpringConsole] Operate[ %-20X{userName} ]  %-d{yyyy-MM-dd HH:mm:ss} %-5p %-15c{1}: %m%n" />-->
+<!--		</layout>-->
+<!--	</appender>-->
+
+	<!-- 通过logger的定义，可以设定： 
+	1.指定包的日志输出级别 （通过level）
+	2.指定包的日志输出到不同的日志文件中 （通过appender-ref） additivity指示是否遵循缺省的继承机制 默认为true
+	  -->
+	<!-- 任务处理程序，设置输出的方式 -->
+	<logger name="org.vegetto">
+		<level value="INFO" />
+	 	<appender-ref ref="Vegetto"/>
+	</logger>
+	
+	<logger name="java.sql">
+		<level value="ERROR" />
+		<appender-ref ref="Db"/>
+	</logger>
+	<logger name="java.sql.Connection">
+		<level value="ERROR" />
+		<appender-ref ref="Db"/>
+	</logger>
+	<logger name="java.sql.Statement">
+		<level value="ERROR" />
+		<appender-ref ref="Db"/>
+	</logger>
+	<logger name="java.sql.PreparedStatement">
+		<level value="ERROR" />
+		<appender-ref ref="Db"/>
+	</logger>
+	<logger name="java.sql.ResultSet">
+		<level value="ERROR" />
+		<appender-ref ref="Db"/>
+	</logger>
+	<logger name="org.springframework.jdbc">
+		<level value="ERROR" />
+		<appender-ref ref="Db"/>
+	</logger>
+	<logger name="org.apache.ibatis">
+		<level value="ERROR" />
+		<appender-ref ref="Db"/>
+	</logger>
+	
+	<logger name="com.atomikos">
+		<level value="ERROR" />
+		<appender-ref ref="Db"/>
+	</logger>
+	<logger name="org.apache.ibatis.type.BaseTypeHandler">
+		<level value="WRAN" />
+		<appender-ref ref="Db"/>
+	</logger>
+	<logger name="org.springframework.security">
+		<level value="ERROR" />
+<!--		<appender-ref ref="Db"/>-->
+	</logger>
+	<logger name="org.apache">
+		<level value="WARN" />
+		<appender-ref ref="Db"/>
+	</logger>
+<!--	<logger name="org.springframework">-->
+<!--		<level value="WARN" />-->
+<!--		<appender-ref ref="SpringConsole"/>-->
+<!--	</logger>-->
+
+
+
+	<!-- 设置接收所有输出的通道 -->
+	<!-- 全局输出的方式 -->
+	<root>
+		<level value="INFO" />
+		<appender-ref ref="Console" />
+<!--		<appender-ref ref="SpringConsole" />-->
+		<appender-ref ref="ConsoleFile" />
+<!--		<appender-ref ref="Db" />-->
+		<appender-ref ref="Vegetto" />
+	</root>
+
+</log4j:configuration>

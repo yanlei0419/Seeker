@@ -1,0 +1,23 @@
+body {background: #fcfcfc;}
+.navigation {width: 95%;margin-left: 2.5%;padding: 3px 10px;text-align: center;min-width: 1000px;}
+.children {width: 30%;min-width: 240px;margin: 5px;padding: 2px 10px;height: 52px;display: block-inline;overflow:hidden;float: left;border: solid 1px #ccc;border-radius: 5px;text-align: center;}
+a {display: block;text-decoration: none;line-height: 52px;}
+.children>a {position: relative;height: 52px;}
+.children .ve1 {position: absolute;border: solid 1px #ccc;background-color: #0093dd;width: 97%;;line-height: 40px;height: 40px;left: 0px;margin: 5px;border: solid 1px #ccc;font-size: 18px;font-weight: bold;color: #fff;font-family: "微软雅黑";z-index: 2;}
+.children .ve2 {display:none;position: absolute;border: solid 1px #ccc;height:0px;top:25px;left: 0px;margin: 5px;background-color: #0093dd;width: 97%;;line-height: 40px;border: solid 1px #ccc;font-size: 18px;font-weight: bold;color: #fff;font-family: "微软雅黑";background-color: #1161ba;z-index: 0;}
+.saW{position: absolute;width: 97%; z-index: 10;margin:5px;}
+.saH{top:0px; position: absolute; height: 40px;margin:5px;z-index: 10; }
+#ve .children .sa1{left:0px;top:-10px; border-bottom: 3px solid #1161ba;  }
+#ve .children .sa2{left:0px;bottom: -10px;   border-top: 3px solid #1161ba; }
+#ve .children .sa3{top:0px;right: -18px; border-right: 3px solid #1161ba;}
+#ve .children .sa4{top:0px;left: -18px; border-left: 3px solid #1161ba;}
+#le{margin: 100px 35%;width:400px; height: 400px ; font-weight:bold ;font-size:280px; color:#1161ba; text-align: center; position: relative;font-family: "微软雅黑"; }
+#le>.le{position: absolute;width: 50px; height: 50px;}
+#le>.le1{top: -100px; left:55px; position: absolute; border-bottom: 5px solid #1161ba; width: 290px;}
+#le>.le2{bottom: -100px;  left:55px; position: absolute;  border-top: 5px solid #1161ba; width: 290px;}
+#le>.le3{top:55px;right: -100px; position: absolute;  border-left: 5px solid #1161ba; height: 290px}
+#le>.le4{top:55px;left: -100px; position: absolute;  border-right: 5px solid #1161ba;height: 290px}
+#le>.le5{border-top: 5px solid #ff5050 ;border-left: 5px solid #ff5050 ;  left: -100px;top:-100px;}
+#le>.le6{border-top: 5px solid #ff5050;border-right: 5px solid #ff5050;  right: -100px;top:-100px;}
+#le>.le7{border-bottom: 5px solid #ff5050;border-right: 5px solid #ff5050;  right: -100px;bottom:-100px;}
+#le>.le8{border-bottom: 5px solid #ff5050;border-left: 5px solid #ff5050; left: -100px;bottom:-100px;}

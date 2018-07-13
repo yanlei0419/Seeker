@@ -1,0 +1,7 @@
+     .sortable1 li{margin: 5px;}
+        #le td{vertical-align: top;}
+        .lastli{border:dashed 2px #CCC ;  height: 35px; line-height: 35px; text-align: center;}
+        .lastli:hover{ cursor:pointer;}
+        .sort_placeholder{ height:40px;background: #bba;}
+        .infoBox{ height: 40px; cursor:move; min-height: 40px; }
+        .infoBox:hover { cursor:move; }

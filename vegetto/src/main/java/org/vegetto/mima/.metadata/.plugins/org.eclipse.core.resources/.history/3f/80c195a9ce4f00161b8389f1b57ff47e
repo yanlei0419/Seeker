@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE struts-config PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 1.1//EN"
+	"http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+
+	<!-- Form Bean Definitions -->
+
+	<form-beans>
+
+		<!-- form beans of djb begin -->
+
+		<form-bean name="TinfoorgForm" type="com.pbc.zxzx.wyl.info.TinfoorgForm" />
+		<form-bean name="TinfoborrowerForm" type="com.pbc.zxzx.wyl.info.TinfoborrowerForm" />
+		<form-bean name="TdebtrankForm" type="com.pbc.zxzx.wyl.info.TdebtrankForm" />
+		<form-bean name="TrankForm" type="com.pbc.zxzx.wyl.info.TrankForm" />
+		<form-bean name="TrankbyorgForm" type="com.pbc.zxzx.wyl.info.TrankbyorgForm" />
+		<form-bean name="TratedcompanyrankForm"
+			type="com.pbc.zxzx.wyl.info.TratedcompanyrankForm" />
+		<form-bean name="TratedcompanyrankbyclassForm"
+			type="com.pbc.zxzx.wyl.info.TratedcompanyrankbyclassForm" />
+		<form-bean name="TarearatedcompanyrankForm"
+			type="com.pbc.zxzx.wyl.info.TarearatedcompanyrankForm" />
+		<form-bean name="TarearatedcompanyrankbyclassForm"
+			type="com.pbc.zxzx.wyl.info.TarearatedcompanyrankbyclassForm" />
+		<form-bean name="TmatrixForm" type="com.pbc.zxzx.wyl.info.TmatrixForm" />
+		<form-bean name="TorgdistributeForm" type="com.pbc.zxzx.wyl.info.TorgdistributeForm" />
+		<form-bean name="TbalancebyrankForm" type="com.pbc.zxzx.wyl.info.TbalancebyrankForm" />
+		<form-bean name="TbalancebyorgForm" type="com.pbc.zxzx.wyl.info.TbalancebyorgForm" />
+		<form-bean name="TuserdefinedreportForm"
+			type="com.pbc.zxzx.wyl.info.TuserdefinedreportForm" />
+		<form-bean name="TdebtlongrankForm" type="com.pbc.zxzx.wyl.info.TdebtlongrankForm" />
+		<form-bean name="TdebtshortrankForm" type="com.pbc.zxzx.wyl.info.TdebtshortrankForm" />
+		<form-bean name="TdebtlongmatrixForm" type="com.pbc.zxzx.wyl.info.TdebtlongmatrixForm" />
+		<form-bean name="RateOrgDefaultByYearForm"
+			type="com.pbc.zxzx.wyl.info.RateOrgDefaultByYearForm" />
+		<form-bean name="RateOrgDefaultByRankForm"
+			type="com.pbc.zxzx.wyl.info.RateOrgDefaultByRankForm" />
+		<form-bean name="TuploadqueryForm" type="com.pbc.zxzx.wyl.info.TuploadqueryForm" />
+
+		<!--create TinfogradeForm for debt select add by hanchun 2011-03-16 -->
+		<form-bean name="TinfogradeForm" type="com.pbc.zxzx.wyl.info.TinfogradeForm" />
+
+
+		<!-- form beans of djb end -->
+
+		<!-- form beans of ffb begin -->
+		<form-bean name="traceForm" type="com.zxzx.wyl.trace.forms.TraceForm" />
+		<form-bean name="feedbackForm" type="com.zxzx.wyl.feedback.forms.FeedbackForm" />
+		<form-bean name="traceDetailForm" type="com.zxzx.wyl.trace.forms.TraceDetailForm" />
+		<form-bean name="fileQuery"
+			type="com.zxzx.wyl.filemanage.forms.FileQueryForm" />
+
+		<!-- form beans of ffb end -->
+
+		<!-- form beans of gh begin -->
+
+		<form-bean name="LoginForm" type="com.zxzx.wyl.manage.LoginForm" />
+		<form-bean name="ChangePwdForm" type="com.zxzx.wyl.manage.ChangePwdForm" />
+
+		<form-bean name="UserAddForm" type="com.zxzx.wyl.manage.UserAddForm" />
+		<form-bean name="UserListForm" type="com.zxzx.wyl.manage.UserListForm" />
+		<form-bean name="UserUpdateForm" type="com.zxzx.wyl.manage.UserUpdateForm" />
+
+		<form-bean name="GroupAddForm" type="com.zxzx.wyl.manage.GroupAddForm" />
+		<form-bean name="GroupUpdateForm" type="com.zxzx.wyl.manage.GroupUpdateForm" />
+
+		<form-bean name="OrganAddForm" type="com.zxzx.wyl.manage.OrganAddForm" />
+		<form-bean name="OrganListForm" type="com.zxzx.wyl.manage.OrganListForm" />
+		<form-bean name="OrganUpdateForm" type="com.zxzx.wyl.manage.OrganUpdateForm" />
+
+		<form-bean name="LogSystemListForm" type="com.zxzx.wyl.manage.LogSystemListForm" />
+		<form-bean name="LogUserListForm" type="com.zxzx.wyl.manage.LogUserListForm" />
+
+		<!-- form beans of gh end -->
+
+	</form-beans>
+
+	<!-- Global Forward Definitions -->
+
+	<global-forwards>
+		<forward name="welcome" path="/welcome.do" />
+		<forward name="hibex" path="/page/hibernateexecption.jsp" />
+		<forward name="errors" path="/errors.jsp" />
+		<forward name="methodnotfound" path="/page/methodnotfound.jsp" />
+		<forward name="accessdenied_1030" path="/page/ad1030.jsp" />
+		<forward name="accessdenied_20" path="/page/ad20.jsp" />
+		<forward name="accessdenied_70" path="/page/ad70.jsp" />
+	</global-forwards>
+
+	<!-- Action Mapping Definitions -->
+
+	<action-mappings>
+
+		<!-- action of djb begin -->
+
+		<action path="/page/is/01infoorg/doaction" type="com.pbc.zxzx.wyl.info.DoAction"
+			name="TinfoorgForm" scope="session" input="/page/is/01infoorg/index.jsp"
+			validate="true" parameter="method">
+			<forward name="dowyldetailed" path="/page/is/01infoorg/wyldetailed.jsp" />
+			<forward name="debtdetailedinfo" path="/page/is/01infoorg/debtdetailedinfo.jsp" />
+			<forward name="debtdetailedinfo2" path="/page/is/01infoorg/debtdetailedinfo2.jsp" />
+
+			<forward name="debtlongcollect" path="/page/is/01infoorg/debtlongcollect.jsp" />
+			<forward name="debtmatrix" path="/page/is/01infoorg/debtmatrix.jsp" />
+			<forward name="wyl" path="/page/is/01infoorg/wyl.jsp" />
+			<forward name="list" path="/page/is/01infoorg/list.jsp" />
+			<forward name="index" path="/page/is/info.jsp" />
+			<forward name="detailedinfo" path="/page/is/01infoorg/detailedinfo.jsp" />
+			<forward name="business" path="/page/is/01infoorg/business.jsp" />
+			<forward name="debtshortcollect" path="/page/is/01infoorg/debtshortcollect.jsp" />
+			<forward name="debtwylold" path="/page/is/01infoorg/debtwylold.jsp" />
+			<forward name="debtwyl" path="/page/is/01infoorg/debtwyl.jsp" />
+			<forward name="debtshortwyl" path="/page/is/01infoorg/debtshortwyl.jsp" />
+			<forward name="matrix" path="/page/is/01infoorg/matrix.jsp" />
+		</action>
+
+		<action path="/page/is/02infoborrower/doaction" type="com.pbc.zxzx.wyl.info.DoAction"
+			name="TinfoborrowerForm" scope="session" input="/page/is/02infoborrower/index.jsp"
+			validate="true" parameter="method">
+			<forward name="balanceinfo" path="/page/is/02infoborrower/balanceinfo.jsp" />
+			<forward name="breachinfo" path="/page/is/02infoborrower/breachinfo.jsp" />
+			<forward name="similarbreachinfo" path="/page/is/02infoborrower/similarbreachinfo.jsp" />
+			<forward name="list" path="/page/is/02infoborrower/list.jsp" />
+			<forward name="index" path="/page/is/info.jsp" />
+			<forward name="detailedinfo" path="/page/is/02infoborrower/detailedinfo.jsp" />
+			<forward name="debtinfo" path="/page/is/02infoborrower/debtinfo.jsp" />
+			<forward name="debtdetailedinfo" path="/page/is/02infoborrower/debtdetailedinfo.jsp" />
+			<forward name="rateinfo" path="/page/is/02infoborrower/rateinfo.jsp" />
+		</action>
+
+		<action path="/page/is/03debtrank/doaction" type="com.pbc.zxzx.wyl.info.DoAction"
+			name="TdebtrankForm" scope="session" input="/page/is/03debtrank/index.jsp"
+			validate="true" parameter="method">
+			<forward name="bynumber" path="/page/is/03debtrank/bynumber.jsp" />
+			<forward name="index" path="/page/is/03debtrank/index.jsp" />
+			<forward name="list" path="/page/is/03debtrank/list.jsp" />
+			<forward name="debtdetailedinfo" path="/page/is/03debtrank/debtdetailedinfo.jsp" />
+			<forward name="debtshortcollect" path="/page/is/03debtrank/debtshortcollect.jsp" />
+			<forward name="debtlongcollect" path="/page/is/03debtrank/debtlongcollect.jsp" />
+		</action>
+
+		<action path="/page/is/04rank/doaction" type="com.pbc.zxzx.wyl.info.DoAction"
+			name="TrankForm" scope="session" input="/page/is/04rank/index.jsp"
+			validate="true" parameter="method">
+			<forward name="index" path="/page/is/04rank/index.jsp" />
+			<forward name="list" path="/page/is/04rank/list.jsp" />
+			<forward name="wyl" path="/page/is/04rank/wyl.jsp" />
+		</action>
+
+		<action path="/page/is/05rankbyorg/doaction" type="com.pbc.zxzx.wyl.info.DoAction"
+			name="TrankbyorgForm" scope="session" input="/page/is/05rankbyorg/index.jsp"
+			validate="true" parameter="method">
+			<forward name="index" path="/page/is/05rankbyorg/index.jsp" />
+			<forward name="list" path="/page/is/05rankbyorg/list.jsp" />
+			<forward name="wyl" path="/page/is/05rankbyorg/wyl.jsp" />
+		</action>
+
+		<action path="/page/is/06ratedcompanyrank/doaction" type="com.pbc.zxzx.wyl.info.DoAction"
+			name="TratedcompanyrankForm" scope="session"
+			input="/page/is/06ratedcompanyrank/index.jsp" validate="true"
+			parameter="method">
+			<forward name="byaccount" path="/page/is/06ratedcompanyrank/byaccount.jsp" />
+			<forward name="bybanlance" path="/page/is/06ratedcompanyrank/bybanlance.jsp" />
+			<forward name="byfse" path="/page/is/06ratedcompanyrank/byfse.jsp" />
+			<forward name="bynumber" path="/page/is/06ratedcompanyrank/bynumber.jsp" />
+			<forward name="index" path="/page/is/06ratedcompanyrank/index.jsp" />
+			<forward name="list" path="/page/is/06ratedcompanyrank/list.jsp" />
+			<forward name="wyl" path="/page/is/06ratedcompanyrank/wyl.jsp" />
+		</action>
+
+		<action path="/page/is/07ratedcompanyrankbyclass/doaction"
+			type="com.pbc.zxzx.wyl.info.DoAction" name="TratedcompanyrankbyclassForm"
+			scope="session" input="/page/is/07ratedcompanyrankbyclass/index.jsp"
+			validate="true" parameter="method">
+			<forward name="byaccount"
+				path="/page/is/07ratedcompanyrankbyclass/byaccount.jsp" />
+			<forward name="bybanlance"
+				path="/page/is/07ratedcompanyrankbyclass/bybanlance.jsp" />
+			<forward name="byfse" path="/page/is/07ratedcompanyrankbyclass/byfse.jsp" />
+			<forward name="bynumber"
+				path="/page/is/07ratedcompanyrankbyclass/bynumber.jsp" />
+			<forward name="index" path="/page/is/07ratedcompanyrankbyclass/index.jsp" />
+			<forward name="list" path="/page/is/07ratedcompanyrankbyclass/list.jsp" />
+			<forward name="wyl" path="/page/is/07ratedcompanyrankbyclass/wyl.jsp" />
+		</action>
+
+		<action path="/page/is/08arearatedcompanyrank/doaction" type="com.pbc.zxzx.wyl.info.DoAction"
+			name="TarearatedcompanyrankForm" scope="session"
+			input="/page/is/08arearatedcompanyrank/index.jsp" validate="true"
+			parameter="method">
+			<forward name="byaccount" path="/page/is/08arearatedcompanyrank/byaccount.jsp" />
+			<forward name="bybanlance"
+				path="/page/is/08arearatedcompanyrank/bybanlance.jsp" />
+			<forward name="byfse" path="/page/is/08arearatedcompanyrank/byfse.jsp" />
+			<forward name="bynumber" path="/page/is/08arearatedcompanyrank/bynumber.jsp" />
+			<forward name="index" path="/page/is/08arearatedcompanyrank/index.jsp" />
+			<forward name="list" path="/page/is/08arearatedcompanyrank/list.jsp" />
+			<forward name="wyl" path="/page/is/08arearatedcompanyrank/wyl.jsp" />
+		</action>
+
+		<action path="/page/is/09arearatedcompanyrankbyclass/doaction"
+			type="com.pbc.zxzx.wyl.info.DoAction" name="TarearatedcompanyrankbyclassForm"
+			scope="session" input="/page/is/09arearatedcompanyrankbyclass/index.jsp"
+			validate="true" parameter="method">
+			<forward name="byaccount"
+				path="/page/is/09arearatedcompanyrankbyclass/byaccount.jsp" />
+			<forward name="bybanlance"
+				path="/page/is/09arearatedcompanyrankbyclass/bybanlance.jsp" />
+			<forward name="byfse"
+				path="/page/is/09arearatedcompanyrankbyclass/byfse.jsp" />
+			<forward name="bynumber"
+				path="/page/is/09arearatedcompanyrankbyclass/bynumber.jsp" />
+			<forward name="index"
+				path="/page/is/09arearatedcompanyrankbyclass/index.jsp" />
+			<forward name="list"
+				path="/page/is/09arearatedcompanyrankbyclass/list.jsp" />
+			<forward name="wyl"
+				path="/page/is/09arearatedcompanyrankbyclass/wyl.jsp" />
+		</action>
+
+		<action path="/page/is/10matrix/doaction" type="com.pbc.zxzx.wyl.info.DoAction"
+			name="TmatrixForm" scope="session" input="/page/is/10matrix/index.jsp"
+			validate="true" parameter="method">
+			<forward name="index" path="/page/is/10matrix/index.jsp" />
+			<forward name="matrix" path="/page/is/10matrix/matrix.jsp" />
+			<forward name="list" path="/page/is/10matrix/list.jsp" />
+		</action>
+
+		<action path="/page/is/11orgdistribute/doaction" type="com.pbc.zxzx.wyl.info.DoAction"
+			name="TorgdistributeForm" scope="session" input="/page/is/11orgdistribute/index.jsp"
+			validate="true" parameter="method">
+			<forward name="11" path="/page/is/11orgdistribute/11.jsp" />
+			<forward name="11view" path="/page/is/11orgdistribute/11view.jsp" />
+			<forward name="index" path="/page/is/11orgdistribute/index.jsp" />
+		</action>
+
+		<action path="/page/is/12balancebyrank/doaction" type="com.pbc.zxzx.wyl.info.DoAction"
+			name="TbalancebyrankForm" scope="session" input="/page/is/12balancebyrank/index.jsp"
+			validate="true" parameter="method">
+			<forward name="bybanlance" path="/page/is/12balancebyrank/bybanlance.jsp" />
+			<forward name="index" path="/page/is/12balancebyrank/index.jsp" />
+			<forward name="list" path="/page/is/12balancebyrank/list.jsp" />
+		</action>
+
+		<action path="/page/is/13balancebyorg/doaction" type="com.pbc.zxzx.wyl.info.DoAction"
+			name="TbalancebyorgForm" scope="session" input="/page/is/13balancebyorg/index.jsp"
+			validate="true" parameter="method">
+			<forward name="bybanlance" path="/page/is/13balancebyorg/bybanlance.jsp" />
+			<forward name="list" path="/page/is/13balancebyorg/list.jsp" />
+			<forward name="index" path="/page/is/13balancebyorg/index.jsp" />
+		</action>
+
+		<action path="/page/is/14userdefinedreport/doaction" type="com.pbc.zxzx.wyl.info.DoAction"
+			name="TuserdefinedreportForm" scope="session"
+			input="/page/is/14userdefinedreport/index.jsp" validate="true"
+			parameter="method">
+			<forward name="index" path="/page/is/14userdefinedreport/index.jsp" />
+		</action>
+
+		<action path="/page/is/15debtlongrank/doaction" type="com.pbc.zxzx.wyl.info.DoAction"
+			name="TdebtlongrankForm" scope="session" input="/page/is/15debtlongrank/index.jsp"
+			validate="true" parameter="method">
+			<forward name="byaccount" path="/page/is/15debtlongrank/byaccount.jsp" />
+			<forward name="bybanlance" path="/page/is/15debtlongrank/bybanlance.jsp" />
+			<forward name="list" path="/page/is/15debtlongrank/list.jsp" />
+			<forward name="index" path="/page/is/15debtlongrank/index.jsp" />
+			<forward name="wyl" path="/page/is/15debtlongrank/wyl.jsp" />
+			<forward name="wylbyorg" path="/page/is/15debtlongrank/wylbyorg.jsp" />
+		</action>
+
+		<action path="/page/is/16debtshortrank/doaction" type="com.pbc.zxzx.wyl.info.DoAction"
+			name="TdebtshortrankForm" scope="session" input="/page/is/16debtshortrank/index.jsp"
+			validate="true" parameter="method">
+			<forward name="byaccount" path="/page/is/16debtshortrank/byaccount.jsp" />
+			<forward name="bybanlance" path="/page/is/16debtshortrank/bybanlance.jsp" />
+			<forward name="list" path="/page/is/16debtshortrank/list.jsp" />
+			<forward name="wyl" path="/page/is/16debtshortrank/wyl.jsp" />
+			<forward name="wylbyorg" path="/page/is/16debtshortrank/wylbyorg.jsp" />
+			<forward name="index" path="/page/is/16debtshortrank/index.jsp" />
+		</action>
+
+		<action path="/page/is/17debtlongmatrix/doaction" type="com.pbc.zxzx.wyl.info.DoAction"
+			name="TdebtlongmatrixForm" scope="session"
+			input="/page/is/17debtlongmatrix/index.jsp" validate="true"
+			parameter="method">
+			<forward name="index" path="/page/is/17debtlongmatrix/index.jsp" />
+			<forward name="list" path="/page/is/17debtlongmatrix/list.jsp" />
+			<forward name="matrix" path="/page/is/17debtlongmatrix/matrix.jsp" />
+		</action>
+
+		<!--
+			create TinfogradeForm for debt select path add by hanchun 2011-03-16
+		-->
+		<action path="/page/is/18debtgrade/doaction" type="com.pbc.zxzx.wyl.info.DoAction"
+			name="TinfogradeForm" scope="session" input="/page/is/info.jsp"
+			validate="true" parameter="method">
+			<forward name="index" path="/page/is/info.jsp" />
+			<forward name="list" path="/page/is/18debtgrade/list.jsp" />
+			<forward name="debtdetailedinfo2" path="/page/is/18debtgrade/debtdetailedinfo2.jsp" />
+		</action>
+
+
+		<action path="/page/upload/doaction" type="com.pbc.zxzx.wyl.info.DoAction"
+			name="TuploadqueryForm" scope="session" input="/page/upload/query.jsp"
+			validate="true" parameter="method">
+			<forward name="query" path="/page/upload/query.jsp" />
+			<forward name="detailed" path="/page/upload/detailed.jsp" />
+			<forward name="feedback" path="/page/upload/feedback.jsp" />
+		</action>
+
+		<!-- action of djb end -->
+
+		<!-- action of ffb begin -->
+
+		<action name="feedbackForm" path="/page/om/feedback/feedback"
+			type="com.zxzx.wyl.feedback.actions.FeedbackAction">
+			<forward name="init" path="/page/om/feedback/init.jsp" />
+			<forward name="query" path="/page/om/feedback/init.jsp" />
+		</action>
+
+		<action name="traceForm" path="/page/om/trace/trace"
+			type="com.zxzx.wyl.trace.actions.TraceAction">
+			<forward name="init" path="/page/om/trace/init.jsp" />
+			<forward name="query" path="/page/om/trace/init.jsp" />
+			<forward name="confirm" path="/page/om/trace/init.jsp" />
+			<forward name="detail" path="/page/om/trace/detail.jsp" />
+
+		</action>
+
+		<action name="traceDetailForm" path="/page/om/trace/traceDetail"
+			type="com.zxzx.wyl.trace.actions.TraceDetailAction">
+			<forward name="detail" path="/page/om/trace/detail.jsp" />
+			<forward name="confirm" path="/page/om/trace/detail.jsp" />
+		</action>
+
+		<action name="fileQuery" path="/page/om/filemanage/query"
+			scope="request" type="com.zxzx.wyl.filemanage.actions.FileManageAction">
+			<forward name="query" path="/page/om/filemanage/query.jsp" />
+			<forward name="init" path="/page/om/filemanage/query.jsp" />
+			<forward name="detail" path="/page/om/filemanage/detail.jsp" />
+			<forward name="modify" path="/page/om/filemanage/detail.jsp" />
+			<forward name="traceQuery" path="/page/om/trace/traceQuery.jsp" />
+			<forward name="traceQueryDetail" path="/page/om/trace/traceQuery.jsp" />
+		</action>
+
+		<!-- action of ffb end -->
+
+		<!-- action of gh begin -->
+
+		<action path="/welcome" forward="/page/welcome.jsp" />
+
+		<action path="/page/main" forward="/page/main.jsp" />
+
+		<action path="/login" type="com.zxzx.wyl.manage.LoginAction"
+			name="LoginForm" validate="true" input="/index.jsp">
+			<forward name="loginsuccess_20" path="/page/loginsuccess.jsp" />
+			<forward name="loginsuccess_103070" path="/page/loginsuccess103070.jsp" />
+			<forward name="loginfailed" path="/loginfailed.jsp" />
+			<forward name="hibex" path="/hibex.jsp" />
+		</action>
+
+		<action path="/page/cp/cp" type="com.zxzx.wyl.manage.ChangePwdAction"
+			name="ChangePwdForm">
+			<forward name="changepwd" path="/page/cp/changepwd.jsp" />
+		</action>
+
+		<action path="/logout" type="com.zxzx.wyl.manage.LogoutAction">
+			<forward name="logoutsuccess" path="/" />
+			<forward name="hibex" path="/hibex.jsp" />
+		</action>
+
+		<!-- Actions for user begin -->
+
+		<action path="/page/om/muser/useractivate" type="com.zxzx.wyl.manage.UserActivateAction">
+			<forward name="useractivate" path="/page/om/muser/useractivate.jsp" />
+		</action>
+
+		<action path="/page/om/muser/userdeactivate" type="com.zxzx.wyl.manage.UserDeactivateAction">
+			<forward name="userdeactivate" path="/page/om/muser/userdeactivate.jsp" />
+		</action>
+
+		<action path="/page/om/muser/userdel" type="com.zxzx.wyl.manage.UserDelAction">
+			<forward name="userdel" path="/page/om/muser/userdel.jsp" />
+		</action>
+
+		<action path="/page/om/muser/useraddpage" forward="/page/om/muser/useradd.jsp" />
+
+		<action path="/page/om/muser/useradd" type="com.zxzx.wyl.manage.UserAddAction"
+			name="UserAddForm">
+			<forward name="addsuccess" path="/page/om/muser/useraddsuccess.jsp" />
+		</action>
+
+		<action path="/page/om/muser/userlist" type="com.zxzx.wyl.manage.UserListAction"
+			name="UserListForm">
+			<forward name="userlist" path="/page/om/muser/userlist.jsp" />
+		</action>
+
+		<action path="/page/om/muser/userdetail" type="com.zxzx.wyl.manage.UserDetailAction">
+			<forward name="userdetail" path="/page/om/muser/userdetail.jsp" />
+		</action>
+
+		<action path="/page/om/muser/useredit" type="com.zxzx.wyl.manage.UserEditAction"
+			name="UserUpdateForm">
+			<forward name="useredit" path="/page/om/muser/useredit.jsp" />
+		</action>
+
+		<action path="/page/om/muser/userupdate" type="com.zxzx.wyl.manage.UserUpdateAction"
+			name="UserUpdateForm">
+			<forward name="update" path="/page/om/muser/userupdate.jsp" />
+		</action>
+
+		<!-- Actions for user end -->
+
+		<!-- Actions for group begin -->
+
+		<action path="/page/om/mgroup/groupdel" type="com.zxzx.wyl.manage.GroupDelAction">
+			<forward name="groupdel" path="/page/om/mgroup/groupdel.jsp" />
+		</action>
+
+		<action path="/page/om/mgroup/groupaddpage" forward="/page/om/mgroup/groupadd.jsp" />
+
+		<action path="/page/om/mgroup/groupadd" type="com.zxzx.wyl.manage.GroupAddAction"
+			name="GroupAddForm">
+			<forward name="addsuccess" path="/page/om/mgroup/groupaddsuccess.jsp" />
+		</action>
+
+		<action path="/page/om/mgroup/groupdetail" type="com.zxzx.wyl.manage.GroupDetailAction">
+			<forward name="groupdetail" path="/page/om/mgroup/groupdetail.jsp" />
+		</action>
+
+		<action path="/page/om/mgroup/groupedit" type="com.zxzx.wyl.manage.GroupEditAction">
+			<forward name="groupedit" path="/page/om/mgroup/groupedit.jsp" />
+		</action>
+
+		<action path="/page/om/mgroup/groupupdate" type="com.zxzx.wyl.manage.GroupUpdateAction"
+			name="GroupUpdateForm">
+			<forward name="update" path="/page/om/mgroup/groupupdate.jsp" />
+		</action>
+
+		<action path="/page/om/mgroup/grouplist" type="com.zxzx.wyl.manage.GroupListAction">
+			<forward name="grouplist" path="/page/om/mgroup/grouplist.jsp" />
+		</action>
+
+		<action path="/page/om/mgroup/groupright" type="com.zxzx.wyl.manage.GroupRightAction">
+			<forward name="groupright" path="/page/om/mgroup/groupright.jsp" />
+		</action>
+
+		<action path="/page/om/mgroup/grouprightupdate" type="com.zxzx.wyl.manage.GroupRightUpdateAction">
+			<forward name="grouprightupdate" path="/page/om/mgroup/grouprightupdate.jsp" />
+		</action>
+
+		<!-- Actions for group end -->
+
+
+		<!-- Actions for organ begin -->
+
+		<action path="/page/om/morgan/organlist" type="com.zxzx.wyl.manage.OrganListAction"
+			name="OrganListForm">
+			<forward name="listorgan" path="/page/om/morgan/organlist.jsp" />
+		</action>
+
+		<action path="/page/om/morgan/organedit" type="com.zxzx.wyl.manage.OrganEditAction"
+			name="OrganUpdateForm">
+			<forward name="organedit" path="/page/om/morgan/organedit.jsp" />
+		</action>
+
+		<action path="/page/om/morgan/organupdate" type="com.zxzx.wyl.manage.OrganUpdateAction"
+			name="OrganUpdateForm">
+			<forward name="update" path="/page/om/morgan/organupdate.jsp" />
+		</action>
+
+		<action path="/page/om/morgan/organactivate" type="com.zxzx.wyl.manage.OrganActivateAction">
+			<forward name="organactivate" path="/page/om/morgan/organactivate.jsp" />
+		</action>
+
+		<action path="/page/om/morgan/organdeactivate" type="com.zxzx.wyl.manage.OrganDeactivateAction">
+			<forward name="organdeactivate" path="/page/om/morgan/organdeactivate.jsp" />
+		</action>
+
+		<action path="/page/om/morgan/organdel" type="com.zxzx.wyl.manage.OrganDelAction">
+			<forward name="organdel" path="/page/om/morgan/organdel.jsp" />
+		</action>
+
+		<action path="/page/om/morgan/organaddpage" forward="/page/om/morgan/organadd.jsp" />
+
+		<action path="/page/om/morgan/organadd" type="com.zxzx.wyl.manage.OrganAddAction"
+			name="OrganAddForm">
+			<forward name="addsuccess" path="/page/om/morgan/organaddsuccess.jsp" />
+		</action>
+
+		<!-- Actions for organ end -->
+
+
+		<!-- Other Actions begin -->
+
+		<action path="/page/om/log_system/loglist" type="com.zxzx.wyl.manage.LogSystemListAction"
+			name="LogSystemListForm">
+			<forward name="loglist" path="/page/om/log_system/loglist.jsp" />
+		</action>
+
+		<action path="/page/om/log_user/loglist" type="com.zxzx.wyl.manage.LogUserListAction"
+			name="LogUserListForm">
+			<forward name="loglist" path="/page/om/log_user/loglist.jsp" />
+		</action>
+
+		<!-- Other Actions end -->
+
+		<!-- action of gh end -->
+
+	</action-mappings>
+
+	<message-resources parameter="com.zxzx.wyl.config.resources_zh" />
+
+</struts-config>

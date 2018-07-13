@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="GB2312" standalone="no"?>
+  <roomStates>
+    <RoomState>
+      <RoomCode>V55</RoomCode>
+      <RoomName>V55</RoomName>
+      <RoomType>50</RoomType>
+      <AreaID>VIP</AreaID>
+      <TxnState>2720</TxnState>
+    </RoomState>
+    <RoomState>
+      <RoomCode>V66</RoomCode>
+      <RoomName>V66</RoomName>
+      <RoomType>50</RoomType>
+      <AreaID>VIP</AreaID>
+      <TxnState>2720</TxnState>
+    </RoomState>
+    <RoomState>
+      <RoomCode>B27</RoomCode>
+      <RoomName>B27</RoomName>
+      <RoomType>20</RoomType>
+      <AreaID>B</AreaID>
+      <TxnState>2720</TxnState>
+　　</RoomState> 
+　　</roomStates>

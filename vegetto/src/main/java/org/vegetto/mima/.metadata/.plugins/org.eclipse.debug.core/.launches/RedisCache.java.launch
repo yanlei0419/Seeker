@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.genuitec.javascript.debug.launchConfigurationType">
+<stringAttribute key="org.eclipse.atf.config.appPath" value="src/org/seeker/ve/RedisCache.java"/>
+<booleanAttribute key="org.eclipse.atf.config.isinternalbrowser" value="true"/>
+<booleanAttribute key="org.eclipse.atf.config.isurl" value="false"/>
+<stringAttribute key="org.eclipse.atf.config.project" value="JavaBase"/>
+<stringAttribute key="org.eclipse.atf.config.webmodule" value="JavaBase"/>
+<booleanAttribute key="org.eclipse.atf.mozilla.ide.debugoverride_preferences" value="false"/>
+<stringAttribute key="org.eclipse.atf.ui.config.fullPath" value="JavaBase/src/org/seeker/ve/RedisCache.java"/>
+<booleanAttribute key="org.eclipse.atf.ui.config.useseverconfig" value="false"/>
+<stringAttribute key="org.eclipse.atf.ui.debug.browserexec" value=""/>
+<stringAttribute key="org.eclipse.atf.ui.debug.processType" value="JavaScript Application"/>
+</launchConfiguration>

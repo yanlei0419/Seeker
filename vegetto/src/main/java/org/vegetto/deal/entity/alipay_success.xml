@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<alipay>
+    <is_success>T</is_success>
+    <request>
+        <param name="_input_charset">utf-8</param>
+        <param name="service">single_trade_query</param>
+        <param name="partner">2088901057080473</param>
+        <param name="out_trade_no">1395973406375</param>
+    </request>
+    <response>
+        <trade>
+            <body>订单描述</body>
+            <buyer_email>xueteng528@126.com</buyer_email>
+            <buyer_id>2088002586048474</buyer_id>
+            <discount>0.00</discount>
+            <flag_trade_locked>0</flag_trade_locked>
+            <gmt_create>2014-03-28 10:25:33</gmt_create>
+            <gmt_last_modified_time>2014-03-28 10:29:37
+            </gmt_last_modified_time>
+            <gmt_payment>2014-03-28 10:29:37</gmt_payment>
+            <is_total_fee_adjust>F</is_total_fee_adjust>
+            <operator_role>B</operator_role>
+            <out_trade_no>1395973406375</out_trade_no>
+            <payment_type>1</payment_type>
+            <price>0.01</price>
+            <quantity>1</quantity>
+            <seller_email>zhifubao001@wanda.cn</seller_email>
+            <seller_id>2088901057080473</seller_id>
+            <subject>测试订单名称</subject>
+            <to_buyer_fee>0.00</to_buyer_fee>
+            <to_seller_fee>0.01</to_seller_fee>
+            <total_fee>0.01</total_fee>
+            <trade_no>2014032844706447</trade_no>
+            <trade_status>TRADE_SUCCESS</trade_status>
+            <use_coupon>F</use_coupon>
+        </trade>
+    </response>
+    <sign>6054e9c4be4d37e659ae0e48326fd133</sign>
+    <sign_type>MD5</sign_type>
+</alipay>
+
+<alipay>
+    <is_success>F</is_success>
+    <error>TRADE_NOT_EXIST</error>
+</alipay>

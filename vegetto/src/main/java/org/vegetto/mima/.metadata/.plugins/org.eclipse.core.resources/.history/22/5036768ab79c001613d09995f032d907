@@ -1,0 +1,13 @@
+package org.vegetto.format;
+
+import java.text.DecimalFormat;
+
+public class NumFormat {
+	public static String getNumberh(String val) {
+		String pattern = "00000000000000000";
+		// String pattern="00000000";
+		DecimalFormat fmt = new DecimalFormat(pattern);
+		long val = System.currentTimeMillis();
+		return fmt.format(val);
+	}
+}

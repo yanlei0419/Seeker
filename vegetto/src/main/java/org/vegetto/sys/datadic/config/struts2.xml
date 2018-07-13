@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="struts2_DataDic" extends="struts-default">
+		<action name="DataDicManage_*" class="org.vegetto.sys.datadic.action.DataDicAction" method="{1}">
+			<result name="toList" type="redirect">sys/data/datadic/list.jsp</result>
+			<result name="add" type="redirect">sys/data/datadic/list.jsp</result>
+			<result name="toUpdate" type="dispatcher">sys/data/datadic/update.jsp</result>
+			<result name="toDetail" type="dispatcher">sys/data/datadic/detail.jsp</result>
+		</action>
+	</package>
+
+	<package name="struts2_DataDicType" extends="struts-default">
+		<action name="DataDicTypeManage_*" class="org.vegetto.sys.datadic.action.DataDicTypeAction" method="{1}">
+			<result name="toList" type="redirect">sys/data/datadictype/list.jsp</result>
+			<result name="add" type="redirect">sys/data/datadictype/list.jsp</result>
+			<result name="toUpdate" type="dispatcher">sys/data/datadictype/update.jsp</result>
+			<result name="toDetail" type="dispatcher">sys/data/datadictype/detail.jsp</result>
+		</action>
+	</package>
+</struts>
+
+<!--
+	请在struts.xml中引入本文件:
+	<include file="/org/vegetto/sys/datadic/config/struts2.xml"/>
+-->

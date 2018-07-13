@@ -1,0 +1,66 @@
+/**
+ * 项目名称：bmcasBufferLayer
+ * 包名：org.pbccrc.dr.cronjobs.service.impl
+ * 创建日期：2014-4-10 上午11:50:26
+ * @author：Shengxingya
+ */
+package org.pbccrc.dr.cronjobs.service.impl;
+
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Timer;
+import org.pbccrc.util.DateUtils;
+import org.pbccrc.util.Parameters;
+
+/**
+ * @author 
+ * 		Shengxingya<br/>
+ *		2014-4-10 上午11:50:26<br/>
+ */
+public class TimerManager {
+	private static final long PERIOD_DAY = 24 * 60 * 60 * 60 * 1000;
+
+	/**
+	 * 根据给定的任务启动时间，初始化Timer定时任务服务
+	 */
+	public TimerManager() {
+		job1();
+	}
+
+	/**
+	 * 启动CDAS数据处理状态检查程序
+	 */
+	public void job1() {
+		String startTime[] = null;
+		if (Parameters.getParameter("startTime_cdas", "00:00").indexOf(":") == -1) {
+			startTime = "00:00".split(":");
+		} else {
+			startTime = Parameters.getParameter("startTime_cdas", "00:00").split(":");
+		}
+		int hour = Integer.parseInt(startTime[0]);
+		int minute = Integer.parseInt(startTime[1]);
+		int second = 0;
+		if (startTime.length > 2) {
+			second = Integer.parseInt(startTime[2]);
+		}
+		Calendar calendar = Calendar.getInstance();
+
+		calendar.set(Calendar.HOUR_OF_DAY, hour);
+		calendar.set(Calendar.MINUTE, minute);
+		calendar.set(Calendar.SECOND, second);
+
+		Date date = calendar.getTime();
+
+		/**
+		 * 如果设置的时间为过去时，Timer默认会立即执行任务。 为防止这种情况， 如果启动程序时已过启动时间，
+		 * 则将启动时间设置为第二天的同一时间， 本日不再执行。
+		 */
+		if (date.before(new Date())) {
+			date = DateUtils.addDay(date, 1);
+		}
+
+		DataProcessJobServiceimpl task = new DataProcessJobServiceimpl();
+		Timer timer = new Timer();
+		timer.schedule(task, date, PERIOD_DAY);
+	}
+}

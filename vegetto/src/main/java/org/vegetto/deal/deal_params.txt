@@ -1,0 +1,11 @@
+
+支付包和财付通请求参数  前两个 参数必填
+
+
+out_trade_no   订单编号
+
+total_fee  付款金额
+
+body  订单描述
+
+subject 支付宝 订单那个

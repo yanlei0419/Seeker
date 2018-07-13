@@ -1,0 +1,106 @@
+package com.pbc.zxzx.dbc;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+import javax.sql.DataSource;
+
+import org.apache.log4j.Logger;
+
+/**
+ * <p>Title: </p>
+ * <p>Description: </p>
+ * <p>Copyright: Copyright (c) 2005~2008</p>
+ * <p>Company: 中国人民银行征信中心技术部</p>
+ * @author 姬南
+ * @version 1.0
+ */
+
+public class DBCPImpl
+    extends DBOperation
+    implements DataSourceConnection {
+
+    /**
+     * Logger for this class
+     */
+    private static final Logger logger = Logger.getLogger(DBCPImpl.class);
+
+    private static String DATA_SOURCE_NAME = "java:comp/env/jdbc/DBConnection";
+    
+
+    protected DBCPImpl() {
+    }
+
+    /**
+     * 获取一个连接
+     * @return
+     * @throws SQLException
+     * @throws NamingException
+     */
+    public Connection getConnection() throws SQLException, NamingException {
+
+        try {
+//        	Class.forName("com.mysql.jdbc.Driver");
+            Context ctx = new InitialContext();
+            DataSource ds = (DataSource) ctx.lookup(DATA_SOURCE_NAME);
+            Connection conn = ds.getConnection();
+            return conn;
+        }catch (SQLException ex) {
+            logger.warn(ex);
+            throw ex;
+        }
+        catch (NamingException ex) {
+            logger.warn(ex);
+            throw ex;
+        } 
+        
+    }
+
+    public void freeConnection(Connection conn) {
+        try {
+            if (null != conn) {
+                conn.close();
+            }
+        }
+        catch (SQLException ex) {
+            logger.warn(ex);
+        }
+    }
+
+    /**
+     * 非事务性操作。用于执行单条数据库 Insert、Update、Delete 操作
+     * @param sql
+     * @return 返回执行语句条数
+     * @throws java.lang.Exception
+     */
+    public int executeUpdate(String sql) throws Exception {
+
+        logger.info(sql);
+
+        Connection conn = null;
+        Statement stmt = null;
+
+        try {
+            conn = getConnection();
+            stmt = conn.createStatement();
+            int num = stmt.executeUpdate(sql);
+            return num;
+        }
+        catch (NamingException ex) {
+            logger.warn(ex);
+            throw ex;
+        }
+        catch (SQLException ex) {
+            logger.warn(ex);
+            throw ex;
+        }
+        finally {
+            stmt.close();
+            freeConnection(conn);
+        }
+    }
+}

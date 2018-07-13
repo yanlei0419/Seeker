@@ -1,0 +1,48 @@
+package org.vegetto.format;
+
+import java.text.DecimalFormat;
+
+public class NumFormat {
+	public static String getNumberh(long val) {
+		String pattern = "00000000000000000";
+		// String pattern="00000000";
+		DecimalFormat fmt = new DecimalFormat(pattern);
+		val = System.currentTimeMillis();
+		return fmt.format(val);
+	}
+
+
+	
+	/**
+	 * @param val 原字符
+	 * @param len 格式长度
+	 * @param c 补尾字符
+	 * @return
+	 */
+	private static String alterAddZero(String val,int len,int c){
+		int temp=5-val.length();
+		return String.format("%0"+temp+"d%n", c);
+	}
+	
+	/**
+	 * 补0
+	 * @param val
+	 * @param len
+	 * @return
+	 */
+	public static String alterAddZero(String val,int len){
+		int temp=5-val.length();
+		return alterAddZero(val, len);
+	}
+	
+	public static void main(String[] args) {
+//		System.out.printf("最牛的编号是：%030d%n", 7);
+//		System.out.printf("最牛的编号是：%d%n", 7);
+		String str = "0050580";
+		System.out.println(str.replaceFirst("^0*", ""));
+		
+		String val="323";
+		int len=5-val.length();
+		System.out.println(alterAddZero(val, len));
+	}
+}

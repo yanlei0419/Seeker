@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 4 element(s) from project &apos;Java_Code_utf-8&apos;&#x0D;&#x0A;- Original project: &apos;Java_Code_utf-8&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     jawt_md.h&#x0D;&#x0A;     jni_md.h&#x0D;&#x0A;     jni.h&#x0D;&#x0A;     org_vegetto_natives_HelloWorld.h" description="Delete elements" element1="dll/org_vegetto_natives_HelloWorld.h" element2="dll/jawt_md.h" element3="dll/jni_md.h" element4="dll/jni.h" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="4" stamp="1484533968111" subPackages="false" version="1.0"/>
+</session>

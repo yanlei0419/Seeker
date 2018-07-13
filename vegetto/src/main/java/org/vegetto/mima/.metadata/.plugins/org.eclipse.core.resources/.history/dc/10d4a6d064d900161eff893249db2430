@@ -1,0 +1,25 @@
+
+public class HelloWorld {
+	public native void displayHelloWorld();// 
+	public native String say(String content);
+	public void sys(){
+		System.out.println(11111);
+	}
+
+	static {
+//		System.out.println(System.getProperty("java.library.path"));
+		System.loadLibrary("HImpl");// 
+//		System.load("D:/Workspaces/MyEclipse 8.5/JNI/src/HImpl.dll");// 
+	}
+	public static void main(String[] args) {
+//		System.out.println("hello word");
+		HelloWorld h = new HelloWorld();
+//		java.lang.UnsatisfiedLinkError: XXXX()V
+//		h.sys();
+//		h.displayHelloWorld();
+		String s=h.say("say");
+		System.out.println(s);
+//		cl -I%java_home%\include -I%java_home%\include\win32 -LD HImpl.c -HWImpl.dll
+	}
+
+}

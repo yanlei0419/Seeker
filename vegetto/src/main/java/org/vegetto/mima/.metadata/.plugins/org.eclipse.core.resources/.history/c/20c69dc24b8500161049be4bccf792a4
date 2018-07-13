@@ -1,0 +1,49 @@
+/**
+ * 
+ */
+package org.pbccrc.bmcas.bufferlayer;
+
+import org.pbccrc.bmcas.bufferlayer.service.BMWorkGetter;
+import org.pbccrc.dr.cronjobs.service.impl.TimerManager;
+import org.pbccrc.dr.taskservice.NewDRWorkAssigner;
+import org.pbccrc.dr.taskservice.NewDrWorkGetter;
+import org.pbccrc.util.Parameters;
+
+/**
+ * @author Shengxingya 2013-11-15 下午2:20:18
+ */
+public class Main {
+	public static void main(String[] args) {
+		String path="";
+		if(args.length>0){
+			path=args[0];
+		}
+		//载入配置文件，设置初始参数
+		Parameters.init(path);
+//		if(Parameters.isEnableBmcas){
+//			BMWorkGetter work = new BMWorkGetter();
+//			//初始化sql执行子线程
+//			work.init();
+//			
+//			new Thread(work,"BmcasMainThread").start();
+//		}
+		/*if(Parameters.isEnableDr){
+			DRWorkGetter work = new DRWorkGetter();
+			//初始化sql执行子线程
+			work.init();
+			
+			new Thread(work,"HisDrsMainThread").start();
+		}*/
+		//执行违约率系统数据操作
+		if(Parameters.isEnableDrCronJob){
+			new TimerManager();
+		}
+		
+//		if(Parameters.isEnableDr){
+//			//查询数据库获取task表中未完成任务 将其放在违约率的队列中Parameters.newDrWorkTaskidQueue.put(taskid);
+//			NewDrWorkGetter work = new NewDrWorkGetter();
+//			work.init();
+//			new Thread(work,"HisDrsMainThread").start();
+//		}
+	}
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="captureSection">
+		<item value="11" key="captureCurrentAction"/>
+		<item value="true" key="captureMinimize"/>
+		<item value="0" key="delayTimer"/>
+		<item value="0" key="captureDelay"/>
+		<item value="false" key="captureClipboardAction"/>
+		<item value="false" key="includeCursor"/>
+	</section>
+</section>

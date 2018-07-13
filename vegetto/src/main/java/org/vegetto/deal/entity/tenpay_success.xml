@@ -1,0 +1,64 @@
+<!-- 财付通支付成功之后的 xml-->
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <agentid />
+  <bank_billno>201404017848007</bank_billno>
+  <bank_type>CMB_FP</bank_type>
+  <buyer_alias />
+  <cash_ticket_fee>0</cash_ticket_fee>
+  <discount>0</discount>
+  <fee_type>1</fee_type>
+  <input_charset>utf-8</input_charset>
+  <is_refund>false</is_refund>
+  <is_split>false</is_split>
+  <out_trade_no>OD1396323127033</out_trade_no>
+  <partner>1900000109</partner>
+  <product_fee>1</product_fee>
+  <retcode>0</retcode>
+  <retmsg />
+  <rmb_total_fee />
+  <sign>A5A15EF1AC686E7C67265E0C8AF15291</sign>
+  <sign_key_index>1</sign_key_index>
+  <sign_type>MD5</sign_type>
+  <time_end>20140401113238</time_end>
+  <total_fee>1</total_fee>
+  <trade_mode>1</trade_mode>
+  <trade_state>0</trade_state>
+  <transaction_id>1900000109201404010527866297</transaction_id>
+  <transport_fee>0</transport_fee>
+</root>
+
+
+
+
+<!-- 财付通支付失败之后的 xml-->
+
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <agentid />
+    <bank_billno />
+    <bank_type />
+    <buyer_alias />
+    <cash_ticket_fee>0</cash_ticket_fee>
+    <discount />
+    <fee_type />
+    <input_charset>utf-8</input_charset>
+    <is_refund>false</is_refund>
+    <is_split>false</is_split>
+    <out_trade_no />
+    <partner>1900000109</partner>
+    <product_fee />
+    <retcode>88221009</retcode>
+    <retmsg>[1022]您的请求出错，交易单不存在，请重新再试。[20140330171302-35]</retmsg>
+    <rmb_total_fee />
+    <sign>3819A65D70D4E5C2D496B2DEDBBBA465</sign>
+    <sign_key_index>1</sign_key_index>
+    <sign_type>MD5</sign_type>
+    <time_end />
+    <total_fee />
+    <trade_mode>1</trade_mode>
+    <trade_state />
+    <transaction_id />
+    <transport_fee />
+</root>
+

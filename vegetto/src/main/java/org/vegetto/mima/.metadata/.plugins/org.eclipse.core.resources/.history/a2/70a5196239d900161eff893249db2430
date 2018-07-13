@@ -1,0 +1,11 @@
+
+public class Test {
+	public static void main(String[] args) {
+		System.out.println("hello word");
+		HelloWorld h = new HelloWorld();
+//		java.lang.UnsatisfiedLinkError: XXXX()V
+//		h.sys();
+		h.displayHelloWorld();
+//		cl -I%java_home%\include -I%java_home%\include\win32 -LD HImpl.c -Fehello.dll
+	}
+}

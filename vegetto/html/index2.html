@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>我们自己的导航</title>
+
+		<meta name="keywords" content="导航">
+		<meta name="description" content="this is my page">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="content-type" content="text/html; charset=UTF-8">
+
+		<style type="text/css">
+#le{margin: 100px 400px;width:400px; height: 400px; text-align: center; position: relative;}
+#le>.le{position: absolute;width: 50px; height: 50px;}
+#le>.le1{top: -100px; left:55px; position: absolute; border-bottom: 5px solid #1161ba; width: 290px;}
+#le>.le2{bottom: -100px;  left:55px; position: absolute;  border-top: 5px solid #1161ba; width: 290px;}
+#le>.le3{top:55px;right: -100px; position: absolute;  border-left: 5px solid #1161ba; height: 290px}
+#le>.le4{top:55px;left: -100px; position: absolute;  border-right: 5px solid #1161ba;height: 290px}
+#le>.le5{border-top: 5px solid #ff5050 ;border-left: 5px solid #ff5050 ;  left: -100px;top:-100px;}
+#le>.le6{border-top: 5px solid #ff5050;border-right: 5px solid #ff5050;  right: -100px;top:-100px;}
+#le>.le7{border-bottom: 5px solid #ff5050;border-right: 5px solid #ff5050;  right: -100px;bottom:-100px;}
+#le>.le8{border-bottom: 5px solid #ff5050;border-left: 5px solid #ff5050; left: -100px;bottom:-100px;}
+</style>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+
+	</head>
+
+	<body>
+		<div id="le"></div>
+	</body>
+</html>
+<script type="text/javascript">
+initOdd($('#le'),'slow');
+function initOdd(t,s){
+	t.each(function(){
+		$(this).append('<div class="le1"></div><div class="le2"></div><div class="le3"></div><div class="le4"></div>')
+		$(this).append('<div class="le le5"></div><div class="le le6"></div><div class="le le7"></div><div class="le le8"></div>')
+	});
+	t.find('div.le1').css({opacity:'0'});
+	t.find('div.le2').css({opacity:'0'});
+	t.find('div.le3').css({opacity:'0'});
+	t.find('div.le4').css({opacity:'0'});
+	t.find('div.le5').css({opacity:'0'});
+	t.find('div.le6').css({opacity:'0'});
+	t.find('div.le7').css({opacity:'0'});
+	t.find('div.le8').css({opacity:'0'});
+	t.hover(function (){
+			var o=1,mb='0px';
+			$(this).find('.le1').stop().animate({
+				top:mb,
+				opacity:o
+			},s);
+			$(this).find('.le2').stop().animate({
+				bottom:mb,
+				opacity:o
+			},s);
+			$(this).find('.le3').stop().animate({
+				right:mb,
+				opacity:o
+			},s);
+			$(this).find('.le4').stop().animate({
+				left:mb,
+				opacity:o
+			},s)
+			$(this).find('.le5').stop().animate({
+				top:mb,
+				left:mb,
+				opacity:o
+			},s);
+			$(this).find('.le6').stop().animate({
+				top:mb,
+				right:mb,
+				opacity:o
+			},s);
+			$(this).find('.le7').stop().animate({
+				bottom:mb,
+				right:mb,
+				opacity:o
+			},s);
+			$(this).find('.le8').stop().animate({
+				bottom:mb,
+				left:mb,
+				opacity:o
+			},s);
+	},function(){
+			var o=1,ma='-100px';
+			$(this).find('.le1').stop().animate({
+				top:ma,
+				opacity:o
+			},s);
+			$(this).find('.le2').stop().animate({
+				bottom:ma,
+				opacity:o
+			},s);
+			$(this).find('.le3').stop().animate({
+				right:ma,
+				opacity:o
+			},s);
+			$(this).find('.le4').stop().animate({
+				left:ma,
+				opacity:o
+			},s);
+			$(this).find('.le5').stop().animate({
+				top:ma,
+				left:ma,
+				opacity:o
+			},s);
+			$(this).find('.le6').stop().animate({
+				top:ma,
+				right:ma,
+				opacity:o
+			},s);
+				$(this).find('.le7').stop().animate({
+				bottom:ma,
+				right:ma,
+				opacity:o
+			},s);
+			$(this).find('.le8').stop().animate({
+				bottom:ma,
+				left:ma,
+				opacity:o
+			},s);
+	});
+}
+</script>

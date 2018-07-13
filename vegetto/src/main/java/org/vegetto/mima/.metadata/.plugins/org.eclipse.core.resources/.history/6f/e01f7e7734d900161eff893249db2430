@@ -1,0 +1,20 @@
+
+public class HelloWorld {
+	public native void displayHelloWorld();// 
+	public void sys(){
+		System.out.println(11111);
+	}
+
+	static {
+//		System.out.println(System.getProperty("java.library.path"));
+//		System.loadLibrary("HImpl");// 
+//		System.load("D:/code/Java_Code_utf-8/HelloWorldImpl.dll");// 
+	}
+
+	public static void main(String[] args) {
+		System.out.println("hello word");
+		HelloWorld h = new HelloWorld();
+//		h.sys();
+		h.displayHelloWorld();
+	}
+}

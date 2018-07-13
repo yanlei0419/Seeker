@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <!-- 
+        该属性指定需要struts2处理的请求后缀，该属性的默认值是action，即所有匹配*.action的请求都由struts2处理
+        如果用户想要指定多个请求后缀，则多个后缀之间用英文逗号隔开。
+    -->
+    <constant name="struts.action.extension" value="do, action" /><!-- 修改struts2默认修改的后缀  -->
+    <!-- 
+        指定默认编码值，作用于httpservletrequest的setCharacterEncoding方法和freemarker ,velocity的输出
+    -->
+    <constant name="struts.i18n.encoding" value="UTF-8" />
+    <!-- 
+        设置浏览器是否缓存经台内容默认值为true（生产环境下使用），开发阶段最好关闭
+    -->
+    <constant name="struts.serve.stati.browserCache" value="false" />
+    <!-- 
+        当struts的配置文件修改后，系统是否自动重新加载该文件，默认识是false（生产环境下使用），开发阶段最好打开
+    -->
+    <constant name="struts.configuration.xml.reload" value="true" />
+    <!-- 
+        开发模式下使用，这样可以打印出更为详细的错误信息
+    -->
+    <constant name="struts.devMode" value="false" />
+    <!-- 
+        该属性设置struts2 是否支持动态方法的调用，该属性的默认值true。如果需要关闭动态方法，则可设置该属性为false
+    -->
+    <constant name="struts.enable.DynamicMethodInvocation" value="true" />
+    <!-- 
+        设置struts2上传临时文件的默认路径
+    -->
+    <constant name="struts.multipart.saveDir" value="/tmp" />
+    <!-- 通用业务表单跳转 -->
+    <package name="vegettoDefault" extends="struts-default">
+        <global-results>
+            <result name="toStart" type="dispatcher">bpm/worklist/start/start.jsp</result>
+            <result name="toHandle" type="dispatcher">bpm/worklist/handle/handle.jsp</result>
+        </global-results>
+    </package>
+
+    
+    <include file="struts-default.xml"></include>
+
+</struts>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="GB2312" standalone="no"?>
+<promotions>
+    <Promotion>
+      <PromotionType>BUYOUT</PromotionType>
+      <PromotionSubtype></PromotionSubtype>
+      <PromotionName>午夜半价（大包109元)</PromotionName>
+      <PromotionRule>
+　　　　活动类型：买断活动
+                开始时间：23:00
+                结束时间：6:00
+                粉丝卡, 金卡, 铂金卡, 员工卡, 旧会员卡 会员资格允许参加
+                不允许优惠券
+                不允许现金券
+                不允许跨时段
+                买断活动:买6小时，金额109元
+                需要经理授权
+      </PromotionRule>
+      <EffectiveTime>2012/7/2 19:09:00</EffectiveTime>
+      <ExpiryTime>2012/12/31 19:10:00</ExpiryTime>
+      <BeginTime>23:00:00</BeginTime>
+      <EndTime>06:00:00</EndTime>
+      <UsefulTime >23:00:00-06:00:00</UsefulTime >
+      <Description>活动描述</Description >
+      <PubInfo>活动说明</PubInfo>
+      <Precondition>活动前提</Precondition>
+      <PromotionId>活动ID</PromotionId>
+      <AllowBooking>True</AllowBooking>
+    </Promotion>
+    
+    
+    
+     <Promotion>
+      <PromotionType>BUYOUT</PromotionType>
+      <PromotionSubtype></PromotionSubtype>
+      <PromotionName>午夜半价（大包109元)</PromotionName>
+      <PromotionRule>
+　　　　活动类型：买断活动
+      </PromotionRule>
+      <EffectiveTime>2012/7/2 19:09:00</EffectiveTime>
+      <ExpiryTime>2012/12/31 19:10:00</ExpiryTime>
+      <BeginTime>23:00:00</BeginTime>
+      <EndTime>06:00:00</EndTime>
+      <UsefulTime >23:00:00-06:00:00</UsefulTime >
+      <Description>活动描述</Description >
+      <PubInfo>活动说明</PubInfo>
+      <Precondition>活动前提</Precondition>
+      <PromotionId>活动ID</PromotionId>
+      <AllowBooking>True</AllowBooking>
+    </Promotion>
+</promotions>
