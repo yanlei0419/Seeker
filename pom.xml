@@ -7,6 +7,11 @@
     <groupId>org.seeker</groupId>
     <artifactId>Seeker</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>seeker-learn</module>
+        <module>seeker-generated</module>
+        <module>seeker-core</module>
+    </modules>
 
 
 </project>
