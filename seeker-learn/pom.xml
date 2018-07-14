@@ -40,16 +40,7 @@
 	</properties>
 
 	<dependencies>
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>servlet-api</artifactId>
-			<version>2.5</version>
-		</dependency>
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>jsp-api</artifactId>
-			<version>2.0</version>
-		</dependency>
+
 		<!--	Apache commons Dependency Begin -->
 		<!-- https://mvnrepository.com/artifact/commons-logging/commons-logging -->
 		<dependency>
@@ -268,12 +259,12 @@
 			<artifactId>struts2-core</artifactId>
 			<version>2.3.16.3</version>
 		</dependency>
+
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>fastjson</artifactId>
 			<version>1.2.7</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/javax.servlet/servlet-api -->
 
 		<!-- https://mvnrepository.com/artifact/org.safehaus.jug/jug -->
 		<dependency>
@@ -387,14 +378,13 @@
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>servlet-api</artifactId>
-			<version>3.1.0</version>
+			<version>2.5</version>
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
-			<artifactId>servlet-api</artifactId>
-			<version>3.1.0</version>
+			<artifactId>jsp-api</artifactId>
+			<version>2.0</version>
 		</dependency>
-
 
 	</dependencies>
 	<build>
