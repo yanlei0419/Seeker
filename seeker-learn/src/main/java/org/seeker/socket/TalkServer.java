@@ -1,4 +1,4 @@
-package org.vegetto.socket;
+package org.seeker.socket;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

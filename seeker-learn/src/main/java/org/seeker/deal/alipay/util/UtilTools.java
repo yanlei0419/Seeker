@@ -1,4 +1,4 @@
-package org.vegetto.deal.alipay.util;
+package org.seeker.deal.alipay.util;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;

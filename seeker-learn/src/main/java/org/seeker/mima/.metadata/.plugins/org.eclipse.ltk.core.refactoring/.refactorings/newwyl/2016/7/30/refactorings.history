@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring accessors="true" comment="Delete 1 element(s) from project &apos;newwyl&apos;&#x0D;&#x0A;- Original project: &apos;newwyl&apos;&#x0D;&#x0A;- Original element: &apos;com.zxzx.wyl.trace.actions.TraceDetailAction.java&apos;" description="Delete element" element1="/src&lt;com.zxzx.wyl.trace.actions{TraceDetailAction.java" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1469165250077" subPackages="false" version="1.0"/>
-</session>

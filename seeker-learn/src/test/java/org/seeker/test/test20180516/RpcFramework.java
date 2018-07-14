@@ -5,7 +5,7 @@
  * use it only in accordance with the terms of the license agreement you entered
  * into with Alibaba.com.
  */
-package seeker.test.test20180516;
+package org.seeker.test.test20180516;
 
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;

@@ -1,4 +1,4 @@
-package org.vegetto.xml;
+package org.seeker.xml;
 
 public class Promotion {
 	private String PromotionType;

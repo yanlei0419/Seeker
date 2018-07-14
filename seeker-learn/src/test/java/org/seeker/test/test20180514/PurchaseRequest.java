@@ -1,4 +1,4 @@
-package seeker.test.test20180514;
+package org.seeker.test.test20180514;
 
 //请求消息类（采购单）
 public class PurchaseRequest {

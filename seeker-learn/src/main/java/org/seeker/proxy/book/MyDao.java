@@ -1,4 +1,4 @@
-package org.vegetto.proxy.book;
+package org.seeker.proxy.book;
 
 public interface MyDao {
 	

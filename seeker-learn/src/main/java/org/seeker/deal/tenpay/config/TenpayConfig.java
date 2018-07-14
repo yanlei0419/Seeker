@@ -1,7 +1,7 @@
-package org.vegetto.deal.tenpay.config;
+package org.seeker.deal.tenpay.config;
 
-import org.vegetto.deal.util.WebConstants;
 
+import org.seeker.deal.util.WebConstants;
 
 public class TenpayConfig {
 	

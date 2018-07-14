@@ -1,4 +1,4 @@
-//package org.vegetto.log4j;
+package org.seeker.log4j;
 //
 //import java.util.Map;
 //

@@ -1,4 +1,5 @@
-package seeker.test.test20180514;
+package org.seeker.test.test20180514;
+
 
 //副董事长类：具体处理者
 public class VicePresident extends Approver {

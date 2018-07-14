@@ -1,4 +1,4 @@
-package seeker.test.test20180515.fly;
+package org.seeker.test.test20180515.fly;
 
 //抽象享元角色类
 public interface Flyweight {

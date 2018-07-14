@@ -6,7 +6,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>org.vegetto</name>
+	<name>seeker-learn</name>
 	<url>http://maven.apache.org</url>
 
 <!--	<repositories>-->
@@ -40,6 +40,16 @@
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>2.0</version>
+		</dependency>
 		<!--	Apache commons Dependency Begin -->
 		<!-- https://mvnrepository.com/artifact/commons-logging/commons-logging -->
 		<dependency>
@@ -264,18 +274,7 @@
 			<version>1.2.7</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/javax.servlet/servlet-api -->
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>servlet-api</artifactId>
-			<version>2.5</version>
-			<scope>runtime</scope>
-		</dependency>
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>jsp-api</artifactId>
-			<version>2.0</version>
-			<scope>runtime</scope>
-		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/org.safehaus.jug/jug -->
 		<dependency>
 			<groupId>org.safehaus.jug</groupId>
@@ -365,13 +364,37 @@
 			<artifactId>slf4j-log4j12</artifactId>
 			<version>1.7.5</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.apache.mina/mina-core -->
-<dependency>
-    <groupId>org.apache.mina</groupId>
-    <artifactId>mina-core</artifactId>
-    <version>2.0.7</version>
-</dependency>
-		
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>16.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.mina</groupId>
+			<artifactId>mina-core</artifactId>
+			<version>2.0.7</version>
+		</dependency>
+		<dependency>
+			<groupId>fakepath</groupId>
+			<artifactId>license4j</artifactId>
+			<version>1.6</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>3.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>3.1.0</version>
+		</dependency>
+
 
 	</dependencies>
 	<build>

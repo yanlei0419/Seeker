@@ -1,4 +1,4 @@
-package seeker.test.test20180713.demo05;
+package org.seeker.test.test20180713.demo05;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;

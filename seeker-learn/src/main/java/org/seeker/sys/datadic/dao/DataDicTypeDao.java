@@ -1,9 +1,10 @@
-package org.vegetto.sys.datadic.dao;
+package org.seeker.sys.datadic.dao;
 
-import java.util.List;
+
+import org.seeker.sys.datadic.po.DataDicTypePo;
+
 import java.sql.SQLException;
-
-import org.vegetto.sys.datadic.po.DataDicTypePo;
+import java.util.List;
 
 /**
  * 数据字典类别Dao

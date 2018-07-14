@@ -1,4 +1,4 @@
-package seeker.test.test20180709;
+package org.seeker.test.test20180709;
 
 import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.CacheLoader;

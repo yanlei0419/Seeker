@@ -1,4 +1,4 @@
-package seeker.test.test20180515;
+package org.seeker.test.test20180515;
 
 public class User{
     private final String s;

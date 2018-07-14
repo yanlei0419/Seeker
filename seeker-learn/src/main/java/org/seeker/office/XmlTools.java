@@ -1,4 +1,4 @@
-package org.vegetto.office;
+package org.seeker.office;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;

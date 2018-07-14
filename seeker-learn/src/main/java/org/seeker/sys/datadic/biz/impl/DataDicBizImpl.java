@@ -1,26 +1,25 @@
-package org.vegetto.sys.datadic.biz.impl;
+package org.seeker.sys.datadic.biz.impl;
 
-import java.util.ArrayList;
-import java.util.List;
 
-import javax.annotation.Resource;
-
+import org.seeker.common.base.db.DBConnection;
+import org.seeker.sys.datadic.biz.DataDicBiz;
+import org.seeker.sys.datadic.dao.DataDicDao;
+import org.seeker.sys.datadic.dao.DataDicTypeDao;
+import org.seeker.sys.datadic.po.DataDicPo;
+import org.seeker.sys.datadic.po.DataDicTypePo;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
-import org.seeker.common.base.db.DBConnection;
-import org.vegetto.sys.datadic.biz.DataDicBiz;
-import org.vegetto.sys.datadic.dao.DataDicDao;
-import org.vegetto.sys.datadic.dao.DataDicTypeDao;
-import org.vegetto.sys.datadic.po.DataDicPo;
-import org.vegetto.sys.datadic.po.DataDicTypePo;
 
+import javax.annotation.Resource;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 数据字典BizImpl
  * 	自动生成
  * @Date 2015-03-09 17:08:50
  */
-@Transactional(propagation=Propagation.REQUIRED,rollbackFor=Exception.class)
+@Transactional(propagation= Propagation.REQUIRED,rollbackFor=Exception.class)
 public class DataDicBizImpl implements DataDicBiz {
 
 	private DataDicDao dao;

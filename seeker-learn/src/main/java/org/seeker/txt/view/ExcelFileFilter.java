@@ -1,4 +1,4 @@
-package org.vegetto.txt.view;
+package org.seeker.txt.view;
 
 import java.io.File;
 

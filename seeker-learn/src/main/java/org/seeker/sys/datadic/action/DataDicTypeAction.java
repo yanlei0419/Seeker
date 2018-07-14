@@ -1,4 +1,4 @@
-package org.vegetto.sys.datadic.action;
+package org.seeker.sys.datadic.action;
 
 import java.io.PrintWriter;
 import java.util.List;

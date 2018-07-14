@@ -1,4 +1,4 @@
-package seeker.test.test20180522;
+package org.seeker.test.test20180522;
 
 public class StaticTest_1 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package org.vegetto.deal.alipay.util;
+package org.seeker.deal.alipay.util;
 
 import java.io.File;
 import java.io.FileWriter;

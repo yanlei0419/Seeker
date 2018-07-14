@@ -1,4 +1,4 @@
-package org.vegetto.deal.tenpay.client;
+package org.seeker.deal.tenpay.client;
 
 import java.io.IOException;
 import java.util.Iterator;

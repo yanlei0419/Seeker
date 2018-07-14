@@ -1,4 +1,4 @@
-package org.vegetto.mima;
+package org.seeker.mima;
 /** 
  * @author  Shuni Tang
  * @date 	2016年9月5日 上午11:33:54 

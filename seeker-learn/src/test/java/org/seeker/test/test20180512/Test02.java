@@ -1,4 +1,4 @@
-package seeker.test.test20180512;
+package org.seeker.test.test20180512;
 
 import java.util.Arrays;
 

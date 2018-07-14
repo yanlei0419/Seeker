@@ -1,18 +1,4 @@
-package org.vegetto.mima;
-
-import java.net.InetSocketAddress;
-import java.util.HashMap;
-import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.LinkedBlockingQueue;
-
-import org.apache.mina.core.service.IoAcceptor;
-import org.apache.mina.core.session.IdleStatus;
-import org.apache.mina.core.session.IoSession;
-import org.apache.mina.filter.codec.ProtocolCodecFactory;
-import org.apache.mina.filter.codec.ProtocolCodecFilter;
-import org.apache.mina.transport.socket.nio.NioSocketAcceptor;
+package org.seeker.mima;
 
 //import com.dataparse.java.ConsumerJava;
 //import com.dataparse.jni.ConsumerJNI;

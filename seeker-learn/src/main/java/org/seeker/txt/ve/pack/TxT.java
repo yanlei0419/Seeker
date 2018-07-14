@@ -1,4 +1,4 @@
-package org.vegetto.txt.ve.pack;
+package org.seeker.txt.ve.pack;
 
 import java.io.File;
 import java.io.FileInputStream;

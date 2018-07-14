@@ -1,9 +1,0 @@
-#Tue Feb 28 14:13:04 CST 2017
-activeProfiles=D\:\\dev\\maven\\settings.xml
-eclipse.preferences.version=1
-fullBuildGoals=process-test-resources
-includeModules=false
-resolveWorkspaceProjects=true
-resourceFilterGoals=process-resources resources\:testResources
-skipCompilerPlugin=true
-version=1

@@ -1,4 +1,4 @@
-package org.vegetto.proxy.main;
+package org.seeker.proxy.main;
 
 import java.io.BufferedOutputStream;
 import java.io.File;

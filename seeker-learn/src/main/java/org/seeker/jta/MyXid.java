@@ -1,4 +1,4 @@
-package org.vegetto.jta;
+package org.seeker.jta;
 
 import javax.transaction.xa.*;
 

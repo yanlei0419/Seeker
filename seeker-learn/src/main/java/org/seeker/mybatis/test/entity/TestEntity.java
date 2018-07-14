@@ -1,4 +1,4 @@
-package org.vegetto.mybatis.test.entity;
+package org.seeker.mybatis.test.entity;
 
 import java.io.Serializable;
 

@@ -1,4 +1,4 @@
-package seeker.test.Test20180712;
+package org.seeker.test.Test20180712;
 
 public class TestClinit {
     public static void main(String[] args) throws Exception {

@@ -1,4 +1,4 @@
-package org.vegetto.webservice;
+package org.seeker.webservice;
 
 import javax.jws.WebParam;
 

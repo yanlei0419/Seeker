@@ -1,4 +1,4 @@
-package org.vegetto.proxy;
+package org.seeker.proxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

@@ -1,4 +1,4 @@
-package org.vegetto.deal.alipay.util.httpClient;
+package org.seeker.deal.alipay.util.httpClient;
 
 import java.io.UnsupportedEncodingException;
 

@@ -1,4 +1,4 @@
-package org.vegetto.format;
+package org.seeker.format;
 
 import java.text.DecimalFormat;
 

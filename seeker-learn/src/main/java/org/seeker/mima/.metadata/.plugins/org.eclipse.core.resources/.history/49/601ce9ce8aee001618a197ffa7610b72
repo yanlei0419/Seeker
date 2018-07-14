@@ -1,9 +1,0 @@
-package org.vegetto.maven.hello;
-
-public class Hello {
-	public void sys(){
-		System.out.println(22222);
-	}
-	public static void main(String[] args) {
-	}
-}

@@ -1,4 +1,4 @@
-package org.vegetto.db.oracle;  
+package org.seeker.db.oracle;
   
 import java.io.File;  
 import java.io.FileOutputStream;  

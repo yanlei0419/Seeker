@@ -1,4 +1,4 @@
-package seeker.test.test20180522;
+package org.seeker.test.test20180522;
 
 class Foo {
     int i = 1;

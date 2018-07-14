@@ -1,19 +1,12 @@
-package org.vegetto.deal.tenpay;
+package org.seeker.deal.tenpay;
+
+import org.seeker.deal.tenpay.util.MD5Util;
+import org.seeker.deal.tenpay.util.TenpayUtil;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Set;
-import java.util.SortedMap;
-import java.util.TreeMap;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
-import org.vegetto.deal.tenpay.util.MD5Util;
-import org.vegetto.deal.tenpay.util.TenpayUtil;
+import java.util.*;
 
 /**
  * 应答处理类
@@ -27,7 +20,7 @@ public class ResponseHandler {
 	private String key;
 	
 	/** 应答的参数 */
-	private SortedMap parameters; 
+	private SortedMap parameters;
 	
 	/** debug信息 */
 	private String debugInfo;

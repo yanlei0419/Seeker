@@ -1,4 +1,4 @@
-package org.vegetto.format;
+package org.seeker.format;
 
 import java.util.Date;
 import java.util.Locale;

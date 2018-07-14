@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="GB2312" ?>
-
-<config>
-	<!-- 对外、对内应用程序，对外为"1"，对内为"0" -->
-	<appout>0</appout>
-</config>

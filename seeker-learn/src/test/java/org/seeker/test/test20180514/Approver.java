@@ -1,4 +1,4 @@
-package seeker.test.test20180514;
+package org.seeker.test.test20180514;
 
 // 抽象处理者（审批者类）
 public abstract class Approver {

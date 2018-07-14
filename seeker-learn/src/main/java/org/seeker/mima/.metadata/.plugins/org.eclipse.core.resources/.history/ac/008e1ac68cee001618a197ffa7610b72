@@ -1,9 +1,0 @@
-package org.vegetto.maven.hello;
-
-public class TestHello {
-	public void testHello(){
-		Hello hello=new Hello();
-	}
-	
-
-}

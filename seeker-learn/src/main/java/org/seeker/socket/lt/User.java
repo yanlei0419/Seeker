@@ -1,4 +1,4 @@
-package org.vegetto.socket.lt;
+package org.seeker.socket.lt;
 //用户信息类
 public class User{
 	private String name;

@@ -1,4 +1,4 @@
-package seeker.test.test20180515.fly2;
+package org.seeker.test.test20180515.fly2;
 
 //具体享元角色类
 //具体享元角色类ConcreteFlyweight有一个内蕴状态，在本例中一个Character类型的intrinsicState属性代表，它的值应当在享元对象

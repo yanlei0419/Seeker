@@ -1,4 +1,4 @@
-package seeker.test;
+package org.seeker.test;
 
 import java.util.HashMap;
 import java.util.Map;

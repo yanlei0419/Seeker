@@ -1,6 +1,5 @@
 package org.seeker.common.base.db.entity;
 
-import org.vegetto.coding.util.CodeUtil;
 
 public class TableColumns {
 	private String colName;//字段名称
@@ -115,13 +114,6 @@ public class TableColumns {
 	}
 	public void setDescName(String descName) {
 		this.descName = descName;
-	}
-	
-	public String toString(){
-		return  "ColumnName>>" + this.colName+ "\n" + "ColumnName>>" + CodeUtil.wordCaseConvert(this.colName, false) + "\n" + "ColumnLabel>>" + this.colLabel + "\n" + 
-		"ColumnDisplaySize>>" + this.colDisplaySize+ "\n" + "ColumnTypeName>>" + this.typeName + "\n" + 
-		"isReadOnly>>" +this.isReadOnly + "\n" + "isNullable>>" + this.isNull + "\n" + "SchemaName>>" + this.schemaName + "\n" + "Precision>>" + this.precision + "\n" + "Scale>>" +this.scale + "\n" + "Searchable>>" +this.schemaName + "\n" + "";
-		
 	}
 	
 }

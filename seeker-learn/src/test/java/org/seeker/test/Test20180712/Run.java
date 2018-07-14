@@ -1,4 +1,4 @@
-package seeker.test.Test20180712;
+package org.seeker.test.Test20180712;
 
 //线程类
 class MyThread extends Thread {

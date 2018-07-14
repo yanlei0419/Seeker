@@ -1,4 +1,4 @@
-package seeker.test.test20180514;
+package org.seeker.test.test20180514;
 
 //主任类：具体处理者
 public class Director extends Approver {

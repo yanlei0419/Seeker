@@ -1,4 +1,6 @@
-package org.vegetto.txt.view;
+package org.seeker.txt.view;
+
+import org.seeker.txt.ve.pack.TxT;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -6,7 +8,6 @@ import java.util.Random;
 
 import javax.swing.JOptionPane;
 
-import org.vegetto.txt.ve.pack.TxT;
 
 public class WinAction implements ActionListener {
 	Win w;

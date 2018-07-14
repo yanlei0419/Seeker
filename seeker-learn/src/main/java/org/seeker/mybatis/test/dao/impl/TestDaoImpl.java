@@ -1,11 +1,12 @@
-package org.vegetto.mybatis.test.dao.impl;
+package org.seeker.mybatis.test.dao.impl;
+
+
+import org.seeker.common.base.mybatis.db.impl.BaseDaoImpl;
+import org.seeker.mybatis.test.dao.TestDao;
+import org.seeker.mybatis.test.entity.TestEntity;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
-
-import org.springframework.stereotype.Repository;
-import org.seeker.common.base.mybatis.db.impl.BaseDaoImpl;
-import org.vegetto.mybatis.test.dao.TestDao;
-import org.vegetto.mybatis.test.entity.TestEntity;
 
 @Repository("testDao")public class TestDaoImpl extends BaseDaoImpl<TestEntity> implements TestDao {
 

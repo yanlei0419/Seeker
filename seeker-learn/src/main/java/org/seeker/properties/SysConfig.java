@@ -1,9 +1,9 @@
-package org.vegetto.properties;
+package org.seeker.properties;
+
+import org.apache.log4j.Logger;
 
 import java.io.InputStream;
 import java.util.Properties;
-
-import org.apache.log4j.Logger;
 
 public class SysConfig extends Properties {
 	private static final long serialVersionUID = 1L;

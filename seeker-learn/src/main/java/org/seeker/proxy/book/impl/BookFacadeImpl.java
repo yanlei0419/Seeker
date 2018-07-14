@@ -1,7 +1,7 @@
-package org.vegetto.proxy.book.impl;
+package org.seeker.proxy.book.impl;
 
-import org.vegetto.proxy.book.BookFacade;
 
+import org.seeker.proxy.book.BookFacade;
 
 public class BookFacadeImpl implements BookFacade {
 

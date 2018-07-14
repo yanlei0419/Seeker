@@ -1,4 +1,4 @@
-package org.vegetto.deal.tenpay;
+package org.seeker.deal.tenpay;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;

@@ -1,9 +1,10 @@
-package org.vegetto.mybatis.test.dao;
+package org.seeker.mybatis.test.dao;
 
-import java.util.List;
 
 import org.seeker.common.base.mybatis.db.BaseDao;
-import org.vegetto.mybatis.test.entity.TestEntity;
+import org.seeker.mybatis.test.entity.TestEntity;
+
+import java.util.List;
 
 public interface TestDao extends BaseDao<TestEntity> {
 

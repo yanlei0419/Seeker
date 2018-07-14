@@ -1,4 +1,4 @@
-package org.vegetto.socket.yl;
+package org.seeker.socket.yl;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;

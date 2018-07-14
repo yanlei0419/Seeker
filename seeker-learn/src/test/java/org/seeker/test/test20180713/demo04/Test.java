@@ -1,4 +1,4 @@
-package seeker.test.test20180713.demo04;
+package org.seeker.test.test20180713.demo04;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;

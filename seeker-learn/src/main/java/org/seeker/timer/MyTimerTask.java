@@ -1,4 +1,4 @@
-package org.vegetto.timer;
+package org.seeker.timer;
 
 import java.util.Timer;
 import java.util.TimerTask;

@@ -1,4 +1,4 @@
-package org.vegetto.deal.util;
+package org.seeker.deal.util;
 
 import java.util.Date;
 import java.util.HashMap;

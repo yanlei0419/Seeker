@@ -1,12 +1,12 @@
-package org.vegetto.socket.yl;
+package org.seeker.socket.yl;
+
 
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class SocketHandler {
 
-	private static  List<Client> clients = new ArrayList<Client>();
+	private static List<Client> clients = new ArrayList<Client>();
 	public static void main(String args[]) {
 		ChatServer cs = new ChatServer();
 

@@ -1,4 +1,4 @@
-package org.vegetto.mybatis;
+package org.seeker.mybatis;
 
 import java.util.HashMap;
 import java.util.List;

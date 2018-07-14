@@ -1,4 +1,4 @@
-package seeker.test.test20180508;
+package org.seeker.test.test20180508;
 
 import org.seeker.common.base.entity.Page;
 

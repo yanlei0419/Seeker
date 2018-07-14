@@ -1,6 +1,5 @@
-//package org.vegetto.jta.dao;
+package org.seeker.jta.dao;
 //
-//package org.vegetto.jta.dao;
 //
 //import java.sql.Connection;
 //import java.sql.SQLException;

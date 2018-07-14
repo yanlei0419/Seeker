@@ -1,8 +1,8 @@
-package org.vegetto.regis;
-
-import java.util.List;
+package org.seeker.regis;
 
 import redis.clients.jedis.Jedis;
+
+import java.util.List;
 public class RedisListJava {
    public static void main(String[] args) {
       //连接本地的 Redis 服务

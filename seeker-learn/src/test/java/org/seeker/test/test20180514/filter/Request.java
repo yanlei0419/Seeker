@@ -1,4 +1,4 @@
-package seeker.test.test20180514.filter;
+package org.seeker.test.test20180514.filter;
 
 // 对请求消息的抽象
 public class Request {

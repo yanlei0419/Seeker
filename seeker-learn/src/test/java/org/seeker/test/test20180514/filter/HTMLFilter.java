@@ -1,4 +1,4 @@
-package seeker.test.test20180514.filter;
+package org.seeker.test.test20180514.filter;
 
 // 将请求消息中的"<>"替换成"[]"
 public class HTMLFilter implements Filter {

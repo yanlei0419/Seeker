@@ -1,8 +1,9 @@
-package org.vegetto.sys.datadic.po;
+package org.seeker.sys.datadic.po;
 
+
+import org.seeker.common.base.entity.Page;
 
 import java.io.Serializable;
-import org.seeker.common.base.entity.Page;
 
 /**
  * 数据字典实体类

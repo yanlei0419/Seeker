@@ -1,6 +1,5 @@
-package org.vegetto.deal.alipay.config;
+package org.seeker.deal.alipay.config;
 
-import org.vegetto.deal.util.WebConstants;
 
 /* *
  *类名：AlipayConfig
@@ -22,6 +21,8 @@ import org.vegetto.deal.util.WebConstants;
  *1、检查浏览器配置，不让浏览器做弹框屏蔽设置
  *2、更换浏览器或电脑，重新登录查询。
  */
+
+import org.seeker.deal.util.WebConstants;
 
 public class AlipayConfig {
 	

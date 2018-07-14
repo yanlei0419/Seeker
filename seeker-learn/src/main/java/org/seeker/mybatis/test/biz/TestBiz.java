@@ -1,12 +1,12 @@
-package org.vegetto.mybatis.test.biz;
+package org.seeker.mybatis.test.biz;
 
-import java.util.List;
+
+import org.seeker.mybatis.test.dao.TestDao;
+import org.seeker.mybatis.test.entity.TestEntity;
+import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-
-import org.springframework.stereotype.Service;
-import org.vegetto.mybatis.test.dao.TestDao;
-import org.vegetto.mybatis.test.entity.TestEntity;
+import java.util.List;
 
 @Service("testBiz")public class TestBiz {
 	private TestDao dao;

@@ -1,10 +1,11 @@
-package seeker.test.Test20180712;
+package org.seeker.test.Test20180712;
 
-import org.seeker.entity.User;
+
+import org.seeker.test.test20180515.User;
 
 public class Test {
     public static void main(String[] args) {
-        User u=new User();
+        User u=new User("");
         System.out.println(u.getClass().getClassLoader());
         Object o=new Object();
 

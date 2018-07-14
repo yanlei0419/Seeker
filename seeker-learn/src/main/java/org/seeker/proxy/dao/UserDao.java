@@ -1,4 +1,4 @@
-package org.vegetto.proxy.dao;
+package org.seeker.proxy.dao;
 
 public class UserDao {
 	

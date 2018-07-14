@@ -1,4 +1,4 @@
-package seeker.test.test20180509;
+package org.seeker.test.test20180509;
 
 //父类
 class Foo {

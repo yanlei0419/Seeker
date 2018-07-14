@@ -1,4 +1,4 @@
-package seeker.test.test20180516;
+package org.seeker.test.test20180516;
 
 import java.util.*;
 

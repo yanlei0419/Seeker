@@ -1,4 +1,4 @@
-package seeker.test.test20180608;
+package org.seeker.test.test20180608;
 
 //资源类
 class MyService {

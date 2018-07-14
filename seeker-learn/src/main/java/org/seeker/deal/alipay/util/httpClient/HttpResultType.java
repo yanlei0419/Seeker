@@ -2,7 +2,7 @@
  * Alipay.com Inc.
  * Copyright (c) 2004-2005 All Rights Reserved.
  */
-package org.vegetto.deal.alipay.util.httpClient;
+package org.seeker.deal.alipay.util.httpClient;
 
 /* *
  *类名：HttpResultType

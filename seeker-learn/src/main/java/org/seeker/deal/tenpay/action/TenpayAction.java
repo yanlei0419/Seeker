@@ -1,4 +1,4 @@
-package org.vegetto.deal.tenpay.action;
+package org.seeker.deal.tenpay.action;
 
 import java.util.Map;
 import java.util.SortedMap;

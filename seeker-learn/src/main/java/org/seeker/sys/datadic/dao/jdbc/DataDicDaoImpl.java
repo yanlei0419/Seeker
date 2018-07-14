@@ -1,17 +1,17 @@
-package org.vegetto.sys.datadic.dao.jdbc;
+package org.seeker.sys.datadic.dao.jdbc;
+
+
+import org.apache.commons.dbutils.handlers.BeanHandler;
+import org.apache.commons.dbutils.handlers.BeanListHandler;
+import org.seeker.common.base.db.BaseDao;
+import org.seeker.common.base.id.Uuid;
+import org.seeker.common.util.StringUtils;
+import org.seeker.sys.datadic.dao.DataDicDao;
+import org.seeker.sys.datadic.po.DataDicPo;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-
-import org.apache.commons.dbutils.handlers.BeanHandler;
-import org.apache.commons.dbutils.handlers.BeanListHandler;
-
-import org.seeker.common.base.id.Uuid;
-import org.seeker.common.base.db.BaseDao;
-import org.seeker.common.util.StringUtils;
-import org.vegetto.sys.datadic.dao.DataDicDao;
-import org.vegetto.sys.datadic.po.DataDicPo;
 
 /**
  * 数据字典DaoImpl
@@ -140,7 +140,7 @@ public class DataDicDaoImpl extends BaseDao implements DataDicDao {
 						" updateTime " +
 				" ) values ( ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? )";
 		Object [] param = new Object [] { 
-			new Uuid().getUUID(),	
+			new Uuid().getUUID(),
 			po.getTypecode(),	
 			po.getCode(),	
 			po.getName(),	

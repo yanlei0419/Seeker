@@ -1,4 +1,4 @@
-package org.vegetto.log4j;
+package org.seeker.log4j;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;

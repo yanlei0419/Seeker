@@ -1,11 +1,11 @@
-package org.vegetto.office;
-
-import java.io.File;
-import java.io.FileInputStream;
+package org.seeker.office;
 
 import org.apache.pdfbox.pdfparser.PDFParser;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.util.PDFTextStripper;
+
+import java.io.File;
+import java.io.FileInputStream;
 
 public class PdfUtil {
 	/**

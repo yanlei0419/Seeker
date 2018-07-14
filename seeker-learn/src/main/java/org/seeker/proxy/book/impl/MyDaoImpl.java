@@ -1,6 +1,7 @@
-package org.vegetto.proxy.book.impl;
+package org.seeker.proxy.book.impl;
 
-import org.vegetto.proxy.book.MyDao;
+
+import org.seeker.proxy.book.MyDao;
 
 public class MyDaoImpl implements MyDao {
 

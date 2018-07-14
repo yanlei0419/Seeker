@@ -1,4 +1,4 @@
-package org.vegetto.mima;
+package org.seeker.mima;
 
 /**
  * @author Shuni Tang

@@ -1,11 +1,11 @@
-package org.vegetto.mybatis.user.entity;
+package org.seeker.mybatis.user.entity;
+
+import org.seeker.common.util.DateUtil;
+import org.seeker.mybatis.entity.BaseEntity;
 
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
-
-import org.seeker.common.util.DateUtil;
-import org.vegetto.mybatis.entity.BaseEntity;
 
 
 /**

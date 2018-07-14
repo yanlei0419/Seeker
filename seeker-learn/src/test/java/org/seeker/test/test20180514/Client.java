@@ -1,4 +1,4 @@
-package seeker.test.test20180514;
+package org.seeker.test.test20180514;
 
 public class Client {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package seeker.test.test20180515.fly;
+package org.seeker.test.test20180515.fly;
 
 //客户端类
 public class Client {

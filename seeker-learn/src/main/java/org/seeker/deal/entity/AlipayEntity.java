@@ -1,4 +1,4 @@
-package org.vegetto.deal.entity;
+package org.seeker.deal.entity;
 
 import java.io.Serializable;
 

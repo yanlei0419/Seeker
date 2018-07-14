@@ -1,10 +1,10 @@
-package org.vegetto.mybatis.user.dao;
+package org.seeker.mybatis.user.dao;
 
-import java.util.List;
 
 import org.seeker.common.base.mybatis.db.BaseDao;
-import org.vegetto.mybatis.user.entity.PmsUser;
+import org.seeker.mybatis.user.entity.PmsUser;
 
+import java.util.List;
 
 /**
  * 

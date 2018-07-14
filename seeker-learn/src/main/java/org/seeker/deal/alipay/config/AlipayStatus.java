@@ -1,4 +1,4 @@
-package org.vegetto.deal.alipay.config;
+package org.seeker.deal.alipay.config;
 
 
 

@@ -1,19 +1,17 @@
 package org.seeker.common.util;
 
+import org.apache.log4j.Logger;
+import org.seeker.common.base.entity.OperationPo;
+import org.seeker.common.base.entity.UserPo;
+import org.seeker.common.util.config.SysConstant;
+import org.seeker.common.util.print.PrintUtils;
+
 import java.io.UnsupportedEncodingException;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.net.URLDecoder;
 import java.util.HashMap;
 import java.util.Map;
-
-import javax.servlet.http.HttpServletRequest;
-
-import org.apache.log4j.Logger;
-import org.seeker.common.util.print.PrintUtils;
-import org.seeker.common.base.entity.OperationPo;
-import org.seeker.common.base.entity.UserPo;
-import org.seeker.common.util.config.SysConstant;
 
 public class BaseUtils extends PrintUtils {
 	protected static Logger logger = Logger.getLogger(BaseUtils.class.getName());

@@ -1,8 +1,9 @@
-package org.vegetto.sys.datadic.biz;
+package org.seeker.sys.datadic.biz;
+
+
+import org.seeker.sys.datadic.po.DataDicPo;
 
 import java.util.List;
-
-import org.vegetto.sys.datadic.po.DataDicPo;
 
 /**
  * 数据字典Biz

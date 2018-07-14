@@ -1,4 +1,4 @@
-package org.vegetto.deal.tenpay.util;
+package org.seeker.deal.tenpay.util;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

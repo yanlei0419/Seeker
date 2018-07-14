@@ -1,14 +1,14 @@
 //测试工作类   
 //TestJob.java   
 
-package org.vegetto.quartz;
-
-import java.text.SimpleDateFormat;
-import java.util.Date;
+package org.seeker.quartz;
 
 import org.quartz.Job;
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class TestJob implements Job {
 	SimpleDateFormat DateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");

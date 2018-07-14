@@ -1,18 +1,17 @@
-package org.vegetto.deal.alipay.action;
+package org.seeker.deal.alipay.action;
+
+import com.opensymphony.xwork2.ModelDriven;
+import org.seeker.common.base.struts2.BaseAction;
+import org.seeker.deal.alipay.config.AlipayConfig;
+import org.seeker.deal.alipay.util.AlipaySubmit;
+import org.seeker.deal.alipay.util.UtilTools;
+import org.seeker.deal.entity.AlipayEntity;
+import org.seeker.deal.util.DealUtil;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import org.seeker.common.base.struts2.BaseAction;
-import org.vegetto.deal.alipay.config.AlipayConfig;
-import org.vegetto.deal.alipay.util.AlipaySubmit;
-import org.vegetto.deal.alipay.util.UtilTools;
-import org.vegetto.deal.entity.AlipayEntity;
-import org.vegetto.deal.util.DealUtil;
-
-import com.opensymphony.xwork2.ModelDriven;
-
-public class AlipayAtion extends BaseAction implements ModelDriven<AlipayEntity>{
+public class AlipayAtion extends BaseAction implements ModelDriven<AlipayEntity> {
 	
 	/**
 	 * 提交支付包订单信息

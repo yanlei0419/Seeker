@@ -1,13 +1,13 @@
-package org.vegetto.mybatis;
-
-import java.io.IOException;
-import java.io.InputStream;
+package org.seeker.mybatis;
 
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.apache.log4j.Logger;
+
+import java.io.IOException;
+import java.io.InputStream;
 
 /**
  * 获取数据库连接

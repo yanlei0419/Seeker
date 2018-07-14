@@ -1,4 +1,4 @@
-package seeker.test.test20180713.demo01;
+package org.seeker.test.test20180713.demo01;
 
 import java.util.ArrayList;
 import java.util.concurrent.locks.Lock;

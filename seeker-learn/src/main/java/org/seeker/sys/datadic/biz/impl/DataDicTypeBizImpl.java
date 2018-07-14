@@ -1,13 +1,13 @@
-package org.vegetto.sys.datadic.biz.impl;
+package org.seeker.sys.datadic.biz.impl;
+
+
+import org.seeker.common.base.db.DBConnection;
+import org.seeker.sys.datadic.biz.DataDicTypeBiz;
+import org.seeker.sys.datadic.dao.DataDicTypeDao;
+import org.seeker.sys.datadic.po.DataDicTypePo;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import org.seeker.common.base.db.DBConnection;
-import org.vegetto.sys.datadic.biz.DataDicTypeBiz;
-import org.vegetto.sys.datadic.dao.DataDicTypeDao;
-import org.vegetto.sys.datadic.po.DataDicTypePo;
-
 
 /**
  * 数据字典类别BizImpl

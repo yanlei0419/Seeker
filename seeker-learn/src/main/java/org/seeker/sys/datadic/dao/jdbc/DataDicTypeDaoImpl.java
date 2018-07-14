@@ -1,15 +1,16 @@
-package org.vegetto.sys.datadic.dao.jdbc;
+package org.seeker.sys.datadic.dao.jdbc;
 
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
 
 import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
 import org.seeker.common.base.db.BaseDao;
 import org.seeker.common.base.id.Uuid;
-import org.vegetto.sys.datadic.dao.DataDicTypeDao;
-import org.vegetto.sys.datadic.po.DataDicTypePo;
+import org.seeker.sys.datadic.dao.DataDicTypeDao;
+import org.seeker.sys.datadic.po.DataDicTypePo;
+
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 数据字典类别DaoImpl
@@ -89,7 +90,7 @@ public class DataDicTypeDaoImpl extends BaseDao implements DataDicTypeDao {
 						" seq " +
 				" ) values ( ? , ? , ? , ? , ? )";
 		Object [] param = new Object [] { 
-			new Uuid().getUUID(),	
+			new Uuid().getUUID(),
 			po.getCode(),	
 			po.getName(),	
 			po.getContent(),	

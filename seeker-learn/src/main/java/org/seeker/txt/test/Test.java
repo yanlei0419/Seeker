@@ -1,6 +1,7 @@
-package org.vegetto.txt.test;
+package org.seeker.txt.test;
 
-import org.vegetto.txt.view.Win;
+
+import org.seeker.txt.view.Win;
 
 public class Test {
 	public static void main(String[] args) {

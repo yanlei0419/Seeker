@@ -1,4 +1,4 @@
-//package seeker.test.test20180504;
+//package org.seeker.test.test20180504;
 //
 //import org.assertj.core.internal.cglib.beans.BeanGenerator;
 //import org.assertj.core.internal.cglib.beans.BeanMap;

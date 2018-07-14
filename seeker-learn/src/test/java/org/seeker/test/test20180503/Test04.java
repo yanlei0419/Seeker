@@ -1,4 +1,4 @@
-package seeker.test.test20180503;
+package org.seeker.test.test20180503;
 
 import java.util.Random;
 

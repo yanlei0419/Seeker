@@ -1,4 +1,4 @@
-package seeker.test.test20180612;
+package org.seeker.test.test20180612;
 
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;

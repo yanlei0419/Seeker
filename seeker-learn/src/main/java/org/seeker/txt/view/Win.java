@@ -1,4 +1,4 @@
-package org.vegetto.txt.view;
+package org.seeker.txt.view;
 
 import java.awt.Font;
 import javax.swing.ImageIcon;
@@ -13,7 +13,7 @@ import javax.swing.JTextField;
 @SuppressWarnings("serial")
 public class Win extends JFrame {
 	ImageIcon logo = new ImageIcon(this.getClass().getResource(
-			"/images/image01.gif"));
+            "/src/main/resources/images/image01.gif"));
 	public JTextArea jta;
 	public JButton Enter, Reset, Options, Import;
 	public JScrollPane jsp;

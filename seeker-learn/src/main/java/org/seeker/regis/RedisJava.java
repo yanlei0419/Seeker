@@ -1,4 +1,4 @@
-package org.vegetto.regis;
+package org.seeker.regis;
 
 import redis.clients.jedis.Jedis;
 

@@ -1,4 +1,4 @@
-package org.vegetto.deal.alipay.sign;
+package org.seeker.deal.alipay.sign;
 
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;

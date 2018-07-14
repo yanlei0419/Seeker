@@ -1,4 +1,4 @@
-package seeker.test.test20180515.fly2;
+package org.seeker.test.test20180515.fly2;
 
 import java.util.HashMap;
 import java.util.List;

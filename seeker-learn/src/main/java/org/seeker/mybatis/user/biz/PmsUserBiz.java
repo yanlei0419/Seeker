@@ -1,15 +1,14 @@
-package org.vegetto.mybatis.user.biz;
+package org.seeker.mybatis.user.biz;
 
-import java.util.List;
-import java.util.Map;
-
-import javax.annotation.Resource;
-
-import org.springframework.stereotype.Service;
 import org.seeker.common.base.mybatis.entity.PageBean;
 import org.seeker.common.base.mybatis.entity.PageParam;
-import org.vegetto.mybatis.user.dao.PmsUserDao;
-import org.vegetto.mybatis.user.entity.PmsUser;
+import org.seeker.mybatis.user.dao.PmsUserDao;
+import org.seeker.mybatis.user.entity.PmsUser;
+import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
+import java.util.List;
+import java.util.Map;
 
 
 /**

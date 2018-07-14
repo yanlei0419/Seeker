@@ -1,11 +1,11 @@
-package org.vegetto.proxy;
+package org.seeker.proxy;
 
 import org.apache.log4j.Logger;
 import org.seeker.common.util.print.LoggerUtils;
-import org.vegetto.proxy.book.BookFacade;
-import org.vegetto.proxy.book.MyDao;
-import org.vegetto.proxy.book.impl.BookFacadeImpl;
-import org.vegetto.proxy.book.impl.MyDaoImpl;
+import org.seeker.proxy.book.BookFacade;
+import org.seeker.proxy.book.MyDao;
+import org.seeker.proxy.book.impl.BookFacadeImpl;
+import org.seeker.proxy.book.impl.MyDaoImpl;
 
 public class TestProxy {
 	protected static Logger logger = Logger.getLogger(TestProxy.class.getName());

@@ -13,7 +13,6 @@ import java.util.Map;
 import org.seeker.common.base.db.DBConnection;
 import org.seeker.common.base.db.DBConnectionHandler;
 import org.seeker.common.base.db.entity.TableColumns;
-import org.vegetto.coding.util.CodeUtil;
 
 public class DbUtil {
 

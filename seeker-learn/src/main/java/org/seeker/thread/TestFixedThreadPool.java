@@ -1,4 +1,4 @@
-package org.vegetto.thread;
+package org.seeker.thread;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

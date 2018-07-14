@@ -1,4 +1,4 @@
-package seeker.test.test20180611;
+package org.seeker.test.test20180611;
 
 import java.lang.reflect.Field;
 

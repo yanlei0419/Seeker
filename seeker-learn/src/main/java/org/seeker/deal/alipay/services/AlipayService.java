@@ -1,4 +1,4 @@
-package org.vegetto.deal.alipay.services;
+package org.seeker.deal.alipay.services;
 
 import java.io.IOException;
 import java.net.MalformedURLException;

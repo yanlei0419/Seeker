@@ -1,4 +1,4 @@
-package seeker.test.test20180713.demo06;
+package org.seeker.test.test20180713.demo06;
 
 import java.util.ArrayList;
 import java.util.List;

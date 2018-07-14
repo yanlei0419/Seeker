@@ -1,4 +1,4 @@
-package seeker.test.test20180713.demo03;
+package org.seeker.test.test20180713.demo03;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Lock;

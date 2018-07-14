@@ -1,4 +1,4 @@
-package org.vegetto.mybatis.entity;
+package org.seeker.mybatis.entity;
 
 import java.io.Serializable;
 import java.util.Date;

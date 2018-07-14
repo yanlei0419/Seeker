@@ -1,5 +1,0 @@
-#DriverManager.Preferences
-#Fri Jan 13 09:59:31 CST 2017
-org.eclipse.datatools.connectivity.db.derby102.genericDriverTemplate=true
-org.eclipse.datatools.connectivity.db.derby101.genericDriverTemplate=true
-org.eclipse.datatools.connectivity.db.derby.genericDriverTemplate=true

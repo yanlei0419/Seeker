@@ -4,7 +4,7 @@
  * 
  *weizhaozhe 
  */
-package org.vegetto.socket.yl;
+package org.seeker.socket.yl;
 
 /** 
  * 这个聊天室程序是基于TCP Socket的，其中，为了消除IO阻塞，采用了多线程的方式。 
@@ -16,8 +16,6 @@ package org.vegetto.socket.yl;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.ArrayList;
-import java.util.List;
 
 
 public class ChatServer {

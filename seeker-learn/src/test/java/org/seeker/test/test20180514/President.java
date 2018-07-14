@@ -1,4 +1,4 @@
-package seeker.test.test20180514;
+package org.seeker.test.test20180514;
 
 //董事长类：具体处理者
 public class President extends Approver {
