@@ -8,6 +8,7 @@ public class LineDataPo {
 	private int line;//行号
 	private String userId;
 	private int nullLine=0;//前后空行
+
 	
 	public int getNullLine() {
 		return nullLine;
