@@ -1,6 +1,6 @@
 package org.vegetto.common.base.db.entity;
 
-import org.vegetto.coding.util.CodeUtil;
+import CodeUtil;
 
 public class TableColumns {
 	private String colName;//字段名称

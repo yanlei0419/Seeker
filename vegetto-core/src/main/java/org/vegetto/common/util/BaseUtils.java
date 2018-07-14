@@ -7,13 +7,14 @@ import java.net.URLDecoder;
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.servlet.http.HttpServletRequest;
 
 import org.apache.log4j.Logger;
 import org.vegetto.common.base.entity.OperationPo;
 import org.vegetto.common.base.entity.UserPo;
 import org.vegetto.common.util.config.SysConstant;
 import org.vegetto.common.util.print.PrintUtils;
+
+import javax.servlet.http.HttpServletRequest;
 
 public class BaseUtils extends PrintUtils {
 	protected static Logger logger = Logger.getLogger(BaseUtils.class.getName());
