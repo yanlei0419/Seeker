@@ -1,8 +1,7 @@
 package org.seeker.txt.view;
 
-import java.io.File;
-
 import javax.swing.filechooser.FileFilter;
+import java.io.File;
 
 //因为我们需要创建一个文件的过滤器，以便让文件对话框显示我们指定的文件。这里我们就以Excel文件和exe文件举例。
 //那么要做到这点我们就需要重写FileFilter 类的accept来设置相关的过滤器。这个继承类你可以写成外部类、内部类甚至是

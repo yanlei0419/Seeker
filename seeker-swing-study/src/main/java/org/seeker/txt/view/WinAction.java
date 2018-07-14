@@ -2,11 +2,10 @@ package org.seeker.txt.view;
 
 import org.seeker.txt.ve.pack.TxT;
 
+import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Random;
-
-import javax.swing.JOptionPane;
 
 
 public class WinAction implements ActionListener {
