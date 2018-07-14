@@ -13,6 +13,7 @@
         <module>seeker-generated</module>
         <module>seeker-core</module>
         <module>seeker-swing-study</module>
+        <module>seeker-study-jdk</module>
     </modules>
 
 
