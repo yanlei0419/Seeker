@@ -1,5 +1,7 @@
 package org.seeker.deal.tenpay.client;
 
+import org.seeker.deal.tenpay.util.HttpClientUtil;
+
 import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
@@ -18,7 +20,6 @@ import javax.net.ssl.HttpsURLConnection;
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLSocketFactory;
 
-import org.vegetto.deal.tenpay.util.HttpClientUtil;
 
 /**
  * 财付通http或者https网络通信客户端<br/>

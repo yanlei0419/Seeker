@@ -4,12 +4,12 @@ import java.sql.SQLException;
 import java.util.Date;
 import java.util.List;
 
+import org.seeker.mybatis.user.biz.PmsUserBiz;
+import org.seeker.mybatis.user.dao.PmsUserDao;
+import org.seeker.mybatis.user.entity.PmsUser;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.seeker.common.junit.BaseJunit;
-import org.vegetto.mybatis.user.biz.PmsUserBiz;
-import org.vegetto.mybatis.user.dao.PmsUserDao;
-import org.vegetto.mybatis.user.entity.PmsUser;
 
 public class PmsUserDaoTest  extends BaseJunit {
 	public static void main(String[] args) throws SQLException {

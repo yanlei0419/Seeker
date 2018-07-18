@@ -12,14 +12,14 @@ import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.Node;
 import org.dom4j.io.SAXReader;
+import org.seeker.deal.alipay.config.AlipayConfig;
+import org.seeker.deal.alipay.sign.MD5;
+import org.seeker.deal.alipay.util.httpClient.HttpProtocolHandler;
+import org.seeker.deal.alipay.util.httpClient.HttpRequest;
+import org.seeker.deal.alipay.util.httpClient.HttpResponse;
+import org.seeker.deal.alipay.util.httpClient.HttpResultType;
+import org.seeker.deal.util.WebConstants;
 
-import org.vegetto.deal.alipay.config.AlipayConfig;
-import org.vegetto.deal.alipay.sign.MD5;
-import org.vegetto.deal.alipay.util.httpClient.HttpProtocolHandler;
-import org.vegetto.deal.alipay.util.httpClient.HttpRequest;
-import org.vegetto.deal.alipay.util.httpClient.HttpResponse;
-import org.vegetto.deal.alipay.util.httpClient.HttpResultType;
-import org.vegetto.deal.util.WebConstants;
 
 /* *
  *类名：AlipaySubmit

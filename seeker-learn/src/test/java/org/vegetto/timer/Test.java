@@ -1,5 +1,7 @@
 package org.vegetto.timer;
 
+import org.seeker.timer.MyTimerTask;
+
 import java.util.Timer;
 
 public class Test {

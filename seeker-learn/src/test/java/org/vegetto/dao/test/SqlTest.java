@@ -1,10 +1,10 @@
 package org.vegetto.dao.test;
 
 import org.apache.log4j.MDC;
+import org.seeker.sys.datadic.biz.DataDicBiz;
+import org.seeker.sys.datadic.po.DataDicPo;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.seeker.common.base.spring3.SpringContextUtil;
-import org.vegetto.sys.datadic.biz.DataDicBiz;
-import org.vegetto.sys.datadic.po.DataDicPo;
 
 public class SqlTest {
 	public static void main(String[] args) throws Exception {

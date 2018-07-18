@@ -21,8 +21,8 @@ import org.apache.commons.httpclient.methods.multipart.Part;
 import org.apache.commons.httpclient.methods.multipart.StringPart;
 import org.apache.commons.httpclient.params.HttpMethodParams;
 import org.apache.commons.httpclient.util.IdleConnectionTimeoutThread;
+import org.seeker.deal.util.WebConstants;
 
-import org.vegetto.deal.util.WebConstants;
 
 /* *
  *类名：HttpProtocolHandler
@@ -207,7 +207,7 @@ public class HttpProtocolHandler {
      */
     public HttpResponse execute(HttpRequest request) {
         HttpClient httpclient = new HttpClient(connectionManager);
-        String environment =WebConstants.getAppconfigValue("environment");//获取环境 0：测试环境 
+        String environment = WebConstants.getAppconfigValue("environment");//获取环境 0：测试环境
         if( environment != null && "0".equals(environment)){
 	        String proxyHost=WebConstants.getAppconfigValue("deal_proxy");
 	        int proxyPort=Integer.valueOf(WebConstants.getAppconfigValue("deal_port"));

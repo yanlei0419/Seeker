@@ -3,6 +3,8 @@ package org.seeker.deal.tenpay;
 import org.seeker.deal.tenpay.util.MD5Util;
 import org.seeker.deal.tenpay.util.TenpayUtil;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;

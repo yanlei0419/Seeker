@@ -1,5 +1,8 @@
 package org.seeker.deal.tenpay;
 
+import org.seeker.deal.tenpay.config.TenpayConfig;
+import org.seeker.deal.tenpay.util.MD5Util;
+
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.ArrayList;
@@ -8,8 +11,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.vegetto.deal.tenpay.config.TenpayConfig;
-import org.vegetto.deal.tenpay.util.MD5Util;
 
 
 /**
@@ -21,7 +22,7 @@ import org.vegetto.deal.tenpay.util.MD5Util;
 public class RequestHandler {
 	
 	/** 网关url地址 */
-	private String gateUrl=TenpayConfig.tenpayURL;
+	private String gateUrl= TenpayConfig.tenpayURL;
 	
 	/** 密钥 */
 	private final String key= TenpayConfig.key;

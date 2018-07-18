@@ -1,8 +1,9 @@
 package org.vegetto.demo;
 
+import org.seeker.common.util.config.SysConfig;
+
 import java.util.Properties;
 
-import org.vegetto.properties.SysConfig;
 
 public class Test {
 	public static void main(String[] args) throws InterruptedException {
@@ -22,7 +23,7 @@ public class Test {
 //		System.out.println(c.map);
 //		System.out.println(c.l);
 		
-		Properties properties=SysConfig.getProp();
+		Properties properties= SysConfig.getProp();
 		System.setProperties(properties);
 		System.out.println(System.getProperty("jdbcType"));
 		System.out.println(System.getProperty("projectName"));

@@ -3,8 +3,8 @@ package org.seeker.deal.alipay.util.httpClient;
 import java.io.UnsupportedEncodingException;
 
 import org.apache.commons.httpclient.Header;
+import org.seeker.deal.alipay.config.AlipayConfig;
 
-import org.vegetto.deal.alipay.config.AlipayConfig;
 
 /* *
  *类名：HttpResponse

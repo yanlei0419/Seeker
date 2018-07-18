@@ -8,9 +8,9 @@ import java.util.SortedMap;
 import java.util.TreeMap;
 
 import org.jdom.JDOMException;
+import org.seeker.deal.tenpay.util.MD5Util;
+import org.seeker.deal.tenpay.util.XMLUtil;
 
-import org.vegetto.deal.tenpay.util.MD5Util;
-import org.vegetto.deal.tenpay.util.XMLUtil;
 /**
  * 后台应答类<br/>
  * ========================================================================<br/>

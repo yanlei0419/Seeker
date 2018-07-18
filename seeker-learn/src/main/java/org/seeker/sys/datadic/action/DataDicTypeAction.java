@@ -3,13 +3,13 @@ package org.seeker.sys.datadic.action;
 import java.io.PrintWriter;
 import java.util.List;
 
+import com.opensymphony.xwork2.ModelDriven;
 import org.seeker.common.util.json.JsonUtil;
 import org.seeker.common.base.spring3.SpringContextUtil;
 import org.seeker.common.base.struts2.BaseAction;
 
-import org.vegetto.sys.datadic.biz.DataDicTypeBiz;
-import org.vegetto.sys.datadic.po.DataDicTypePo;
-import com.opensymphony.xwork2.ModelDriven;
+import org.seeker.sys.datadic.biz.DataDicTypeBiz;
+import org.seeker.sys.datadic.po.DataDicTypePo;
 
 /**
  * 数据字典类别Action

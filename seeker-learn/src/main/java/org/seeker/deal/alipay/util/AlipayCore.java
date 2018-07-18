@@ -12,8 +12,8 @@ import java.util.Map;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.httpclient.methods.multipart.FilePartSource;
 import org.apache.commons.httpclient.methods.multipart.PartSource;
+import org.seeker.deal.alipay.config.AlipayConfig;
 
-import org.vegetto.deal.alipay.config.AlipayConfig;
 
 /* *
  *类名：AlipayFunction

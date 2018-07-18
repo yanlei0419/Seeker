@@ -11,7 +11,7 @@ public class SqlTest {
 	public static void main(String[] args) throws Exception {
 		MDC.put("userName", "yanlei");
 		ApplicationContext ctx= new ClassPathXmlApplicationContext("spring.xml");
-		SQLCode.tableDesc("emp");
+//		SQLCode.tableDesc("emp");
 //		System.out.println(DbUtil.getDriverName());
 	}
 

@@ -8,8 +8,8 @@ import org.dom4j.Document;
 import org.dom4j.DocumentHelper;
 import org.dom4j.Element;
 import org.seeker.common.util.XmlTools;
-import org.vegetto.xml.OptionItem;
-import org.vegetto.xml.Promotion;
+import org.seeker.xml.OptionItem;
+import org.seeker.xml.Promotion;
 
 
 public class XmlTest  {

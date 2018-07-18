@@ -4,8 +4,8 @@ import java.util.List;
 
 import org.junit.Test;
 import org.seeker.common.junit.BaseJunit;
-import org.vegetto.mybatis.test.biz.TestBiz;
-import org.vegetto.mybatis.test.entity.TestEntity;
+import org.seeker.mybatis.test.biz.TestBiz;
+import org.seeker.mybatis.test.entity.TestEntity;
 
 public class TestDaoTest extends BaseJunit {
 	@Test public void create(){

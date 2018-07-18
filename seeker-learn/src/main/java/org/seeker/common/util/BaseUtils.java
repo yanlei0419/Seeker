@@ -6,6 +6,7 @@ import org.seeker.common.base.entity.UserPo;
 import org.seeker.common.util.config.SysConstant;
 import org.seeker.common.util.print.PrintUtils;
 
+import javax.servlet.http.HttpServletRequest;
 import java.io.UnsupportedEncodingException;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;

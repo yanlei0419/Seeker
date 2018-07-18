@@ -12,11 +12,11 @@ import org.dom4j.Element;
 import org.dom4j.Node;
 import org.dom4j.io.SAXReader;
 import org.seeker.common.util.XmlTools;
-import org.vegetto.deal.alipay.config.AlipayConfig;
-import org.vegetto.deal.alipay.util.AlipaySubmit;
-import org.vegetto.deal.alipay.util.UtilTools;
-import org.vegetto.deal.entity.AlipayEntity;
-import org.vegetto.deal.util.WebConstants;
+import org.seeker.deal.alipay.config.AlipayConfig;
+import org.seeker.deal.alipay.util.AlipaySubmit;
+import org.seeker.deal.alipay.util.UtilTools;
+import org.seeker.deal.entity.AlipayEntity;
+import org.seeker.deal.util.WebConstants;
 
 /* *
  *类名：AlipayService

@@ -1,13 +1,14 @@
 package org.seeker.deal.alipay.util;
 
+import org.seeker.deal.alipay.config.AlipayConfig;
+import org.seeker.deal.alipay.sign.MD5;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Map;
 
-import org.vegetto.deal.alipay.config.AlipayConfig;
-import org.vegetto.deal.alipay.sign.MD5;
 
 /* *
  *类名：AlipayNotify
