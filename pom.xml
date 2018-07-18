@@ -12,7 +12,6 @@
         <module>seeker-learn</module>
         <module>seeker-generated</module>
         <module>seeker-core</module>
-        <module>seeker-swing-study</module>
     </modules>
 
 
