@@ -1,7 +1,0 @@
-DRIVER_NAME=oracle.jdbc.OracleDriver
-DB_URL=jdbc:oracle:thin:@
-IP_ADD=127.0.0.1
-DB_PORT=1521
-DB_NAME=vegetto
-ACCOUNT=icer
-PASSWORD=80023773
