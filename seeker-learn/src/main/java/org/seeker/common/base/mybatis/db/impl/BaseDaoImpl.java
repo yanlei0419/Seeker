@@ -17,7 +17,7 @@ import org.slf4j.LoggerFactory;
 
 
 /**
- * 
+ *
  * @描述: 数据访问层基础支撑类.
  */
 public abstract class BaseDaoImpl<T> extends SqlSessionDaoSupport implements BaseDao<T> {
@@ -48,14 +48,14 @@ public abstract class BaseDaoImpl<T> extends SqlSessionDaoSupport implements Bas
 	public void setSessionTemplate(SqlSessionTemplate sessionTemplate) {
 		this.sessionTemplate = sessionTemplate;
 	}
-	
+
 	public SqlSession getSqlSession() {
 		return super.getSqlSession();
 	}
 
 	/**
 	 * 保存对象.
-	 * 
+	 *
 	 * @param entity
 	 *            .
 	 * @return id .
@@ -72,7 +72,7 @@ public abstract class BaseDaoImpl<T> extends SqlSessionDaoSupport implements Bas
 
 	/**
 	 * 批量保存对象.
-	 * 
+	 *
 	 * @param entity
 	 *            .
 	 * @return id .
@@ -94,7 +94,7 @@ public abstract class BaseDaoImpl<T> extends SqlSessionDaoSupport implements Bas
 
 	/**
 	 * 更新对象.
-	 * 
+	 *
 	 * @param entity
 	 *            .
 	 * @return int .
@@ -109,7 +109,7 @@ public abstract class BaseDaoImpl<T> extends SqlSessionDaoSupport implements Bas
 
 	/**
 	 * 批量更新对象.
-	 * 
+	 *
 	 * @param entity
 	 *            .
 	 * @return int .
@@ -129,7 +129,7 @@ public abstract class BaseDaoImpl<T> extends SqlSessionDaoSupport implements Bas
 
 	/**
 	 * 根据ID查找对象.
-	 * 
+	 *
 	 * @param id
 	 *            .
 	 * @return T .
@@ -140,7 +140,7 @@ public abstract class BaseDaoImpl<T> extends SqlSessionDaoSupport implements Bas
 
 	/**
 	 * 根据ID删除对象.
-	 * 
+	 *
 	 * @param id
 	 *            .
 	 * @return intNum .
@@ -151,7 +151,7 @@ public abstract class BaseDaoImpl<T> extends SqlSessionDaoSupport implements Bas
 
 	/**
 	 * 分页查询 .
-	 * 
+	 *
 	 * @param pageParam
 	 *            分页参数.
 	 * @param paramMap
@@ -187,7 +187,7 @@ public abstract class BaseDaoImpl<T> extends SqlSessionDaoSupport implements Bas
 
 	/**
 	 * 根据条件查询 listBy: <br/>
-	 * 
+	 *
 	 * @param paramMap
 	 * @return
 	 */
@@ -197,7 +197,7 @@ public abstract class BaseDaoImpl<T> extends SqlSessionDaoSupport implements Bas
 
 	/**
 	 * 根据条件查询 getBy: selectOne <br/>
-	 * 
+	 *
 	 * @param paramMap
 	 * @return
 	 */
@@ -211,7 +211,7 @@ public abstract class BaseDaoImpl<T> extends SqlSessionDaoSupport implements Bas
 
 	/**
 	 * 获取Mapper命名空间.
-	 * 
+	 *
 	 * @param sqlId
 	 * @return
 	 */
