@@ -1,2 +1,0 @@
-id::text,text::id 字段
-客户管理::dhcc,BankBusinessChange::bank.business.change::bank.business.change
