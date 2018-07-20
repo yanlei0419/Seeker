@@ -1,6 +1,6 @@
-package seeker.test.Test20180712.ve;
+package org.seeker.test.Test20180712.ve;
 
-public class SClass extends SSClass{
+public class SClass extends SSClass {
     static{
         System.out.println("SClass init!");
     }

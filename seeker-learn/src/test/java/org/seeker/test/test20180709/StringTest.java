@@ -17,6 +17,7 @@ public class StringTest {
         char[] ca= (char[]) fieldA.get(a);
         //
         char[] cb= (char[]) fieldB.get(b);
+        //1.6 复制原有
         System.out.println(Arrays.toString(ca));
         System.out.println(Arrays.toString(cb));
 //        a.wait();
