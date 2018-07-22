@@ -10,8 +10,10 @@ import java.util.concurrent.locks.ReentrantLock;
 public class MyResource {
     private Lock lock=new ReentrantLock();
     private List list=new ArrayList();
+    private Condition r=lock.newCondition();
+    private Condition w=lock.newCondition();
     private Condition a=lock.newCondition();
-    private int flag=3;
+    private int flag=4;
     
     
     
@@ -19,14 +21,14 @@ public class MyResource {
     public void add(){
         lock.lock();
         try {
-            if (list.size()>flag) {
+            if (list.size()<=flag) {
                 String val=UUID.randomUUID().toString();
                 list.add(val);
                 System.out.println("添加一个商品"+val);
-                a.signalAll();
+                r.signalAll();
             } else {
                 System.out.println("商品已满");
-                a.await();
+                w.await();
             }
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -38,12 +40,12 @@ public class MyResource {
     public void sub(){
         lock.lock();
         try {
-            if (list.size()>=flag-2) {
+            if (list.size()>0) {
                 System.out.println("消费一个商品"+list.remove(0));
-                a.signalAll();
+                w.signalAll();
             } else {
                 System.out.println("商品已空");
-                a.await();
+                r.await();
             }
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -56,8 +58,8 @@ public class MyResource {
         MyResource my = new MyResource();
         Thread t1 = new Thread(new Consumer(my));
         Thread t2 = new Thread(new Produce(my));
-        t1.start();
         t2.start();
+        t1.start();
 
     }
 

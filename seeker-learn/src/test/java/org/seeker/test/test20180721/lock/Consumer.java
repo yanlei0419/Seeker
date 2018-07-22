@@ -10,8 +10,13 @@ public class Consumer implements Runnable {
 
     @Override
     public void run() {
-        while(true){
-                list.sub();
+        while (true) {
+//            try {
+//                Thread.sleep(400);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+            list.sub();
         }
 
     }

@@ -12,6 +12,11 @@ public class Produce implements Runnable {
     @Override
     public void run() {
         while (true){
+//            try {
+//                Thread.sleep(400);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
             list.add();
         }
 
