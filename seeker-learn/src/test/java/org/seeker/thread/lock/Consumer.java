@@ -1,23 +1,22 @@
-package org.seeker.test.test20180721.lock;
+package org.seeker.thread.lock;
 
-
-public class Produce implements Runnable {
-
+public class Consumer implements Runnable {
     private MyResource list;
 
-    public Produce(MyResource list) {
+    public Consumer(MyResource list) {
         this.list = list;
     }
 
+
     @Override
     public void run() {
-        while (true){
+        while (true) {
 //            try {
 //                Thread.sleep(400);
 //            } catch (InterruptedException e) {
 //                e.printStackTrace();
 //            }
-            list.add();
+            list.sub();
         }
 
     }

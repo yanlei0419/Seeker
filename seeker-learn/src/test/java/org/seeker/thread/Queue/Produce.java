@@ -1,22 +1,25 @@
-package org.seeker.test.test20180721.Queue;
+package org.seeker.thread.Queue;
 
 
-public class Consumer implements Runnable {
+
+
+public class Produce implements Runnable {
+
     private MyResource list;
 
-    public Consumer(MyResource list) {
+    public Produce(MyResource list) {
         this.list = list;
     }
 
-
     @Override
     public void run() {
-        while(true){
+        while (true){
             try {
-                list.sub();
+                list.add();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
+
     }
 }

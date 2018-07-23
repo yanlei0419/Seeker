@@ -1,6 +1,4 @@
-package org.seeker.test.test20180721.thread;
-
-import java.util.List;
+package org.seeker.thread.thread;
 
 public class Consumer implements Runnable {
     private MyResource list;

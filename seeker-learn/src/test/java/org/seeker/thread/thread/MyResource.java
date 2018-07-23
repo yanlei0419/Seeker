@@ -1,4 +1,4 @@
-package org.seeker.test.test20180721.thread;
+package org.seeker.thread.thread;
 
 import java.util.ArrayList;
 import java.util.List;

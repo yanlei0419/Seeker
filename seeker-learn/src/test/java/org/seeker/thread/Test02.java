@@ -1,4 +1,4 @@
-package org.seeker.test.test20180721;
+package org.seeker.thread;
 
 public class Test02 {
     public static void main(String[] args) throws InterruptedException {

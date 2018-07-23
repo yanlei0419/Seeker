@@ -1,4 +1,4 @@
-package org.seeker.test.test20180721.Queue;
+package org.seeker.thread.Queue;
 
 
 import java.util.UUID;
