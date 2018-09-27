@@ -1,6 +1,6 @@
 //package org.seeker.common.base.license.entity;
 //
-//import org.seeker.common.util.BaseUtils;
+//import org.seeker.mapper.util.BaseUtils;
 //
 //import com.smardec.license4j.License;
 //

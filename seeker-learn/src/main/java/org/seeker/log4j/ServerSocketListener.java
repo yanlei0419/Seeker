@@ -12,9 +12,9 @@ package org.seeker.log4j;
 //
 //import org.apache.log4j.Logger;
 //
-//import com.cbhb.opiWeb.common.socket.SocketThread;
-//import com.cbhb.opiWeb.common.socket.SocketThread2;
-//import com.cbhb.opiWeb.common.socket.UploadSocketThread;
+//import com.cbhb.opiWeb.mapper.socket.SocketThread;
+//import com.cbhb.opiWeb.mapper.socket.SocketThread2;
+//import com.cbhb.opiWeb.mapper.socket.UploadSocketThread;
 //
 //
 //

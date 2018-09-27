@@ -9,9 +9,9 @@
 //import org.apache.ibatis.session.SqlSession;
 //import org.mybatis.spring.SqlSessionTemplate;
 //import org.mybatis.spring.support.SqlSessionDaoSupport;
-//import org.seeker.common.base.mybatis.db.BaseDao;
-//import org.seeker.common.base.mybatis.entity.PageBean;
-//import org.seeker.common.base.mybatis.entity.PageParam;
+//import org.seeker.mapper.base.mybatis.db.BaseDao;
+//import org.seeker.mapper.base.mybatis.entity.PageBean;
+//import org.seeker.mapper.base.mybatis.entity.PageParam;
 //import org.slf4j.Logger;
 //import org.slf4j.LoggerFactory;
 //

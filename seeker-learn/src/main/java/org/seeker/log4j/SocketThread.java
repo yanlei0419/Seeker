@@ -16,7 +16,7 @@ package org.seeker.log4j;
 //
 //import org.apache.log4j.Logger;
 //
-//import com.cbhb.opiWeb.common.PropertiesUtils;
+//import com.cbhb.opiWeb.mapper.PropertiesUtils;
 //
 ///**
 // * @author qms

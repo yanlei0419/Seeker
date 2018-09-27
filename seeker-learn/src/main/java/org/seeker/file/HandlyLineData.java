@@ -1,11 +1,11 @@
-package org.vegetto.file;
+package org.seeker.file;
 
 import java.io.IOException;
 import java.util.HashSet;
 import java.util.Set;
 
 import org.seeker.common.util.WriteFileUtil;
-import org.vegetto.file.entity.LineDataPo;
+import org.seeker.file.entity.LineDataPo;
 
 public class HandlyLineData {
 	public static Set<String> set = new HashSet<String>();

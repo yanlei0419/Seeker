@@ -1,4 +1,4 @@
-package org.vegetto.file;
+package org.seeker.file;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -29,11 +29,11 @@ public class ReadyFileUtils {
                 line++;
             }
             reader.close();
-            Set<String> set=HandlyLineData.set;
+            Set<String> set= HandlyLineData.set;
             Iterator<String> it = set.iterator();
            while(it.hasNext()){
             	String content="-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=end [" +new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date())+"] =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n\t";
-				String abc=it.next()+HandlyLineData.sgin;
+				String abc=it.next()+ HandlyLineData.sgin;
             	WriteFileUtil.writeFile(HandlyLineData.filePath, "[" + fileName + "]=-="+abc, content,5);
 			}
         } catch (IOException e) {

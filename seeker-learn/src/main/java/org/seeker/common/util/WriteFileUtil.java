@@ -1,11 +1,12 @@
 package org.seeker.common.util;
 
+import org.seeker.file.entity.LineDataPo;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import org.vegetto.file.entity.LineDataPo;
 
 public class WriteFileUtil {
 	

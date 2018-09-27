@@ -1,4 +1,4 @@
-package org.vegetto.file.entity;
+package org.seeker.file.entity;
 
 public class LineDataPo {
 	

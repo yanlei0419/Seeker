@@ -13,9 +13,9 @@
 //
 //import org.apache.commons.codec.binary.Base64;
 //import org.apache.log4j.Logger;
-//import org.seeker.common.base.license.config.LicenseConfig;
-//import org.seeker.common.base.license.entity.LicenseEntity;
-//import org.seeker.common.util.BaseUtils;
+//import org.seeker.mapper.base.license.config.LicenseConfig;
+//import org.seeker.mapper.base.license.entity.LicenseEntity;
+//import org.seeker.mapper.util.BaseUtils;
 //
 //import com.smardec.license4j.License;
 //import com.smardec.license4j.LicenseManager;

@@ -71,7 +71,7 @@ public class XmlTest  {
 //		System.out.println(page);
 //		System.out.println(str2);
 		
-		String path="org/vegetto/common/xml/doc/promotions.xml";
+		String path="org/vegetto/mapper/xml/doc/promotions.xml";
 
 //		logger.info(path);
 		//读取xml文档

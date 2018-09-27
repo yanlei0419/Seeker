@@ -10,7 +10,7 @@ package org.seeker.common.base.tools;
 //import java.sql.SQLException;
 //import java.util.ArrayList;
 //import java.util.List;
-//import org.seeker.common.until.UtilTools;
+//import org.seeker.mapper.until.UtilTools;
 //
 //public class ResultToEnitiyByT<T> {
 //	

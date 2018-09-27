@@ -12,8 +12,8 @@ package org.seeker.log4j;
 //import com.cbhb.opi.pm.dao.sign.SignDao;
 //import com.cbhb.opi.pm.log.LoggerFactory;
 //import com.cbhb.opi.pm.service.channel.ChannelFlowService;
-//import com.cbhb.opi.pm.service.common.RespcodeService;
-//import com.cbhb.opi.pm.service.common.UnifiedService;
+//import com.cbhb.opi.pm.service.mapper.RespcodeService;
+//import com.cbhb.opi.pm.service.mapper.UnifiedService;
 //import com.cbhb.opi.pm.service.order.PmBuyOrderManageService;
 //import com.cbhb.opi.pm.service.order.PmInvoiceNoModifyService;
 //import com.cbhb.opi.pm.service.order.PmInvoiceOrderService;
@@ -63,9 +63,9 @@ package org.seeker.log4j;
 //import com.cbhb.opi.pm.service.stock.ErrorBuyOrderService;
 //import com.cbhb.opi.pm.vo.sign.SignVo;
 //import com.cbhb.opi.pmtq.util.StringFormat;
-//import com.cbhb.opiWeb.common.PropertiesUtils;
-//import com.cbhb.opiWeb.common.ValidateUtils;
-//import com.cbhb.opiWeb.common.XmlUtils;
+//import com.cbhb.opiWeb.mapper.PropertiesUtils;
+//import com.cbhb.opiWeb.mapper.ValidateUtils;
+//import com.cbhb.opiWeb.mapper.XmlUtils;
 ///**
 // * @author msqi
 // */

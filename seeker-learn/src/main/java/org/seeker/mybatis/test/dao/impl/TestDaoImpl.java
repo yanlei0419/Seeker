@@ -1,7 +1,7 @@
 package org.seeker.mybatis.test.dao.impl;
 
 
-//import org.seeker.common.base.mybatis.db.impl.BaseDaoImpl;
+//import org.seeker.mapper.base.mybatis.db.impl.BaseDaoImpl;
 //import org.seeker.mybatis.test.dao.TestDao;
 //import org.seeker.mybatis.test.entity.TestEntity;
 //import org.springframework.stereotype.Repository;

@@ -1,6 +1,6 @@
 package org.seeker.mybatis.user.dao.impl;
 
-//import org.seeker.common.base.mybatis.db.impl.BaseDaoImpl;
+//import org.seeker.mapper.base.mybatis.db.impl.BaseDaoImpl;
 import org.seeker.mybatis.user.dao.PmsUserDao;
 import org.seeker.mybatis.user.entity.PmsUser;
 import org.springframework.stereotype.Repository;

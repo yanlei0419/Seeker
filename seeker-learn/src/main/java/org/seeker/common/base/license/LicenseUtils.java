@@ -13,7 +13,7 @@ public class LicenseUtils {
 	
 	public static void Verify(Logger log){
 		try {
-			String className = "org.vegetto.common.base.license.";
+			String className = "org.vegetto.mapper.base.license.";
 			className = className + "LicenseValidate";
 			Class cls = Class.forName(className);
 			Object instance = cls.newInstance();
@@ -29,7 +29,7 @@ public class LicenseUtils {
 	
 	public static void Verify(){
 		try {
-			String className = "org.vegetto.common.base.license.";
+			String className = "org.vegetto.mapper.base.license.";
 			className = className + "LicenseValidate";
 			Class cls = Class.forName(className);
 			Object instance = cls.newInstance();

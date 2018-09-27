@@ -8,7 +8,7 @@
 //import java.security.GeneralSecurityException;
 //
 //import org.apache.commons.codec.binary.Base64;
-//import org.seeker.common.base.license.config.LicenseConfig;
+//import org.seeker.mapper.base.license.config.LicenseConfig;
 //
 //import com.smardec.license4j.License;
 //import com.smardec.license4j.LicenseManager;
@@ -67,7 +67,7 @@
 //
 //
 //	public static void checkKeys() throws Exception{
-//		String className = "org.vegetto.common.base.license.";
+//		String className = "org.vegetto.mapper.base.license.";
 //		className = className + "LicenseValidate";
 //
 //		Class cls = Class.forName(className);
