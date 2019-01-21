@@ -15,6 +15,7 @@ class Foo {
     }
 
     protected int getValue() {
+        System.out.println("父类");
         return i;
     }
 }
@@ -33,6 +34,8 @@ class Bar extends Foo {
 
     @Override
     protected int getValue() {
+        System.out.println("子类");
+        char a='我';
         return j;
     }
 }
