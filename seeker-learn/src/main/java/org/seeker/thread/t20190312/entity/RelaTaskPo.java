@@ -1,5 +1,7 @@
 package org.seeker.thread.t20190312.entity;
 
+import java.util.List;
+
 /**
  *
  */
@@ -17,15 +19,19 @@ public class RelaTaskPo {
      */
     private String taskStatus;
 
-    /**
-     * 任务依赖数量
-     */
-    private String taskDependCount;
+//    /**
+//     * 任务依赖数量
+//     */
+//    private String taskDependCount;
 
     /**
      * 依赖任务名称
      */
-    private String dependTaskName;
+    private List<RelaTaskDependLinkedPo> dependTaskId;
+//    /**
+//     * 依赖任务名称
+//     */
+//    private String dependTaskName;
 
     /**
      * 任务开始时间
@@ -60,7 +66,12 @@ public class RelaTaskPo {
     /**
      * 执行语句
      */
-    private String sql;
+    private String val;
+
+    /**
+     * 线程优先级
+     */
+    private Integer threadPriority;
 
 
 
@@ -100,6 +111,50 @@ public class RelaTaskPo {
     private String remark;
 
 
+    /**
+     * 逻辑需要的字段
+     */
+
+
+    /**
+     * 执行语句
+     */
+    private String sql;
+
+
+    /**
+     * 线程完成情况
+     */
+    private Boolean threadStatus;
+
+    public RelaTaskPo() {
+        threadStatus=false;
+    }
+
+    public List<RelaTaskDependLinkedPo> getDependTaskId() {
+        return dependTaskId;
+    }
+
+    public void setDependTaskId(List<RelaTaskDependLinkedPo> dependTaskId) {
+        this.dependTaskId = dependTaskId;
+    }
+
+    public String getSql() {
+        return sql;
+    }
+
+    public void setSql(String sql) {
+        this.sql = sql;
+    }
+
+    public Boolean getThreadStatus() {
+        return threadStatus;
+    }
+
+    public void setThreadStatus(Boolean threadStatus) {
+        this.threadStatus = threadStatus;
+    }
+
     public String getId() {
         return id;
     }
@@ -124,21 +179,7 @@ public class RelaTaskPo {
         this.taskStatus = taskStatus;
     }
 
-    public String getTaskDependCount() {
-        return taskDependCount;
-    }
 
-    public void setTaskDependCount(String taskDependCount) {
-        this.taskDependCount = taskDependCount;
-    }
-
-    public String getDependTaskName() {
-        return dependTaskName;
-    }
-
-    public void setDependTaskName(String dependTaskName) {
-        this.dependTaskName = dependTaskName;
-    }
 
     public String getTaskStartTime() {
         return taskStartTime;
@@ -188,12 +229,12 @@ public class RelaTaskPo {
         this.taskTypeSeq = taskTypeSeq;
     }
 
-    public String getSql() {
-        return sql;
+    public String getVal() {
+        return val;
     }
 
-    public void setSql(String sql) {
-        this.sql = sql;
+    public void setVal(String val) {
+        this.val = val;
     }
 
     public String getUpdateTime() {
@@ -242,5 +283,31 @@ public class RelaTaskPo {
 
     public void setRemark(String remark) {
         this.remark = remark;
+    }
+
+
+    @Override
+    public String toString() {
+        return "RelaTaskPo{" +
+                "id='" + id + '\'' +
+                ", taskName='" + taskName + '\'' +
+                ", taskStatus='" + taskStatus + '\'' +
+                ", dependTaskId=" + dependTaskId +
+                ", taskStartTime='" + taskStartTime + '\'' +
+                ", taskEndTime='" + taskEndTime + '\'' +
+                ", version='" + version + '\'' +
+                ", taskType='" + taskType + '\'' +
+                ", seq=" + seq +
+                ", taskTypeSeq=" + taskTypeSeq +
+                ", val='" + val + '\'' +
+                ", updateTime='" + updateTime + '\'' +
+                ", updateBy='" + updateBy + '\'' +
+                ", createBy='" + createBy + '\'' +
+                ", createTime='" + createTime + '\'' +
+                ", isDelete='" + isDelete + '\'' +
+                ", remark='" + remark + '\'' +
+                ", sql='" + sql + '\'' +
+                ", threadStatus=" + threadStatus +
+                '}';
     }
 }
