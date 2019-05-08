@@ -9,7 +9,7 @@
 //import org.apache.ibatis.session.SqlSession;
 //import org.mybatis.spring.SqlSessionTemplate;
 //import org.mybatis.spring.support.SqlSessionDaoSupport;
-//import org.seeker.mapper.base.mybatis.db.BaseDao;
+//import org.seeker.mapper.base.mybatis.db.RelaBaseDao;
 //import org.seeker.mapper.base.mybatis.entity.PageBean;
 //import org.seeker.mapper.base.mybatis.entity.PageParam;
 //import org.slf4j.Logger;
@@ -20,7 +20,7 @@
 // *
 // * @描述: 数据访问层基础支撑类.
 // */
-//public abstract class BaseDaoImpl<T> extends SqlSessionDaoSupport implements BaseDao<T> {
+//public abstract class BaseDaoImpl<T> extends SqlSessionDaoSupport implements RelaBaseDao<T> {
 //	protected static final Logger log =LoggerFactory.getLogger(BaseDaoImpl.class.getName());
 //
 //	public static final String SQL_INSERT = "insert";

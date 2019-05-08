@@ -15,6 +15,10 @@ public class Test {
 
     }
 
+    public void Test(){
+
+    }
+
     public static void main(String[] args) {
         System.out.println(Test.Inner.one);
         System.out.println(Test.Inner.two);
@@ -37,5 +41,24 @@ public class Test {
 //        new Timestamp().getTime();
 
 
+        String str1='a'+3+"hello";
+        String str2 ="hello"+'a'+3;
+        System.out.println(str1);
+        System.out.println(str2);
+        System.out.println('a'+0);
+        System.out.println('a');
+
+        double d1=2.0,d2=2.1;
+        double d3=d2-d1;
+        System.out.println(d3);
+        System.out.println(d2-d1); 
+        
+        String s = null;
+        System.out.println("s="+s);
+        
+        System.out.println("5"+2);
+
+
     }
+    static String val="1";
 }
