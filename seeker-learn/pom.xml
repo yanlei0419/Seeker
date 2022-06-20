@@ -255,7 +255,7 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.6</version>
+			<version>8.0.28</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.apache.struts/struts2-core -->
 		<dependency>
@@ -339,7 +339,7 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.32</version>
+			<version>8.0.28</version>
 		</dependency>
 		<!-- Mysql Driver End -->
 		
